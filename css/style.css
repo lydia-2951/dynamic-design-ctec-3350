@@ -2,5 +2,48 @@
     Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design (Lydia Burge, Antonio Funicella, Bijisa Pyakurel, Taylor Watkins)
     Date: 
-    Last update:
+    Last update: 02.12.22
 */
+
+body {
+    background-color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+header {
+    background-color: #caccd1;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #caccd1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+h1 {
+    color: navy;
+    font-size: 50px;
+    letter-spacing: 0px;
+    padding: 20px 0px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
