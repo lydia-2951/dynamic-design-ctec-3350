@@ -14,6 +14,7 @@ h1 {
     font-size: 2.5vw;
     margin: 3px;
     padding: 3x;
+    
 }
 
 
@@ -30,5 +31,33 @@ td {
 }
 
 #strengths {
-    background-color:green
+    background-color:green;
+    color: white;
+}
+
+#weaknesses {
+    background-color:orange ;
+    color: white;}
+
+#opportunities {
+    background-color: blue;
+    color:white
+}
+
+#threats{
+    background-color: red;
+    color: white;
+}
+
+#internal {
+background-color:blueviolet;
+color: white;
+}
+
+#external {
+background-color: goldenrod;
+color: white;
+}
+body {
+    background-color: ghostwhite
 }
