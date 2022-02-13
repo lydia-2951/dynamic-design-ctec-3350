@@ -8,12 +8,12 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2vw;
-    color: black;
   }
 
 body {
     background-color: ghostwhite;
     padding: 20px;
+    color: black;
 }
 
 header p {
@@ -37,28 +37,31 @@ h2 {
 
 table {
     border-collapse: collapse;
-    border: 3px solid black ;
+    border: 3px solid black;
+    overflow: auto;
     }
 
 th {
     border: 3px solid black;
-    color: white; 
+    color: white;
+    padding: 10px;
 }
 
 td {
     border: 3px solid black;
+    padding: 15px;
 }
 
 td ul {
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .strengths {
-    background-color:green;
+    background-color: green;
 }
 
 .weaknesses {
-    background-color:orange ;
+    background-color: orange ;
 }
 
 .opportunities {
@@ -70,7 +73,7 @@ td ul {
 }
 
 .internal {
-background-color:blueviolet;
+background-color: blueviolet;
 }
 
 .external {
