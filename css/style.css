@@ -7,14 +7,16 @@
 
 *, :before, :after {
     box-sizing: border-box;
-    }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+  }
     
 h1 {
     text-align: center;
     font-size: 2.5vw;
     margin: 3px;
     padding: 3x;
-    
+    font-style: oblique;
 }
 
 
@@ -55,9 +57,16 @@ color: white;
 }
 
 #external {
-background-color: goldenrod;
+background-color: teal;
 color: white;
 }
 body {
     background-color: ghostwhite
+}
+
+header p {
+font-family: copperplate;
+font-size: 2vw;
+color: darkslategray;
+font-style: oblique;
 }
