@@ -1,49 +1,69 @@
-/*
-    Project: Mansfield Gardens Website Redesign
-    Author: Dynamic Design (Lydia Burge, Antonio Funicella, Bijisa Pyakurel, Taylor Watkins)
-    Date: 
-    Last update: 02.12.22
+    Date: 10:20 Pm Feb. 12th
+    Last update: Antonio Funicella
 */
 
-body {
-    background-color: #ffffff;
-    font-size: 18px;
-    margin: 0;
-}
-
-header {
-    background-color: #caccd1;
-    text-align: center;
-    padding: 40px 0;
-}
-
-.container {
-    width: 50%;
-    margin: 0 auto;
-}
-
-footer {
-    background-color: #caccd1;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
-}
-
+*, :before, :after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+  }
+    
 h1 {
-    color: navy;
-    font-size: 50px;
-    letter-spacing: 0px;
-    padding: 20px 0px 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 3px;
+    padding: 3x;
+    font-style: oblique;
 }
 
-h2 {
-    color: orange;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+table {
+        border: 3px solid black ;
+    }
+th {
+    border: 3px solid black;
+    
 }
 
-ul {
-    font-family: Verdana, Tahoma, sans-serif;
-    line-height: 1.6;
+td {
+    border: 3px solid black;
 }
 
+#strengths {
+    background-color:green;
+    color: white;
+}
+
+#weaknesses {
+    background-color:orange ;
+    color: white;}
+
+#opportunities {
+    background-color: blue;
+    color:white
+}
+
+#threats{
+    background-color: red;
+    color: white;
+}
+
+#internal {
+background-color:blueviolet;
+color: white;
+}
+
+#external {
+background-color: teal;
+color: white;
+}
+body {
+    background-color: ghostwhite
+}
+
+header p {
+font-family: copperplate;
+font-size: 2vw;
+color: darkslategray;
+font-style: oblique;
+}
