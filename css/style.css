@@ -4,3 +4,31 @@
     Date: 
     Last update:
 */
+
+*, :before, :after {
+    box-sizing: border-box;
+    }
+    
+h1 {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 3px;
+    padding: 3x;
+}
+
+
+table {
+        border: 3px solid black ;
+    }
+th {
+    border: 3px solid black;
+    
+}
+
+td {
+    border: 3px solid black;
+}
+
+#strengths {
+    background-color:green
+}
