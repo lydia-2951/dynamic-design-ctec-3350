@@ -8,7 +8,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2vw;
-  }
+}
 
 body {
     background-color: ghostwhite;
@@ -17,10 +17,10 @@ body {
 }
 
 header p {
-font-family: copperplate;
-font-size: 2vw;
-color: darkslategray;
-font-style: oblique;
+    font-family: copperplate;
+    font-size: 2vw;
+    color: darkslategray;
+        font-style: oblique;
 }
     
 h1 {
@@ -39,7 +39,7 @@ table {
     border-collapse: collapse;
     border: 3px solid black;
     overflow: auto;
-    }
+}
 
 th {
     border: 3px solid black;
@@ -73,9 +73,9 @@ td ul {
 }
 
 .internal {
-background-color: blueviolet;
+    background-color: blueviolet;
 }
 
 .external {
-background-color: teal;
+    background-color: teal;
 }
