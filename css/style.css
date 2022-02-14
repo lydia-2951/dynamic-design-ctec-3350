@@ -1,69 +1,81 @@
-    Date: 10:20 Pm Feb. 12th
-    Last update: Antonio Funicella
+/* Project: Mansfield Gardens Website Redesign
+    Author: Dynamic Design
+    Date: 02.13.22
+    Last update: 02.13.22
 */
 
 *, :before, :after {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2vw;
-  }
+}
+
+body {
+    background-color: ghostwhite;
+    padding: 20px;
+    color: black;
+}
+
+header p {
+    font-family: copperplate;
+    font-size: 2vw;
+    color: darkslategray;
+        font-style: oblique;
+}
     
 h1 {
     text-align: center;
     font-size: 2.5vw;
     margin: 3px;
-    padding: 3x;
+    padding: 3px;
     font-style: oblique;
 }
 
+h2 {
+    font-size: 1.8vw;
+}
 
 table {
-        border: 3px solid black ;
-    }
+    border-collapse: collapse;
+    border: 3px solid black;
+    overflow: auto;
+}
+
 th {
     border: 3px solid black;
-    
+    color: white;
+    padding: 10px;
 }
 
 td {
     border: 3px solid black;
+    padding: 15px;
 }
 
-#strengths {
-    background-color:green;
-    color: white;
+td ul {
+    padding-bottom: 20px;
 }
 
-#weaknesses {
-    background-color:orange ;
-    color: white;}
+.strengths {
+    background-color: green;
+}
 
-#opportunities {
+.weaknesses {
+    background-color: orange ;
+}
+
+.opportunities {
     background-color: blue;
-    color:white
 }
 
-#threats{
+.threats {
     background-color: red;
-    color: white;
 }
 
-#internal {
-background-color:blueviolet;
-color: white;
+.internal {
+    background-color: blueviolet;
 }
 
-#external {
-background-color: teal;
-color: white;
-}
-body {
-    background-color: ghostwhite
-}
-
-header p {
-font-family: copperplate;
-font-size: 2vw;
-color: darkslategray;
-font-style: oblique;
+.external {
+    background-color: teal;
 }
