@@ -4,10 +4,13 @@
     Last update: 02.13.22
 */
 
+/* Beginning of styles for Creative Brief and SWOT Analysis */
+
 *, :before, :after {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2vw;
+    font-size: 20px;
+    /* font-size: 1.2vw; */
 }
 
 body {
@@ -18,21 +21,24 @@ body {
 
 header p {
     font-family: copperplate;
-    font-size: 2vw;
+    font-size: 30px;
+    /* font-size: 2vw; */
     color: darkslategray;
         font-style: oblique;
 }
     
 h1 {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 35px;
+    /* font-size: 2.5vw; */
     margin: 3px;
     padding: 3px;
     font-style: oblique;
 }
 
 h2 {
-    font-size: 1.8vw;
+    font-size: 28px;
+    /* font-size: 1.8vw; */
 }
 
 table {
@@ -79,3 +85,66 @@ td ul {
 .external {
     background-color: teal;
 }
+
+/* Beginning of styles for Footer Component */
+
+.footer-container {
+    background-color: green;
+    border: 5px black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+}
+.footer-socialbuttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: flex-start;
+    align-content: flex-start;
+    align-items: baseline;
+    width: calc((100% / 3) - 1.5rem);
+}
+
+
+
+ 
+.footer-container img {
+    width: 25%;
+    padding: 5px
+    
+    
+} 
+
+.footer-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    width: calc((100% / 3) - 1.5rem);
+}
+
+.footer-text, p {
+    display: flex;
+    flex: 0 1 auto;
+    color: black;
+    font-size: small;
+   
+}
+
+.footer-directions {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    width: calc((100% / 3) - 1.5rem);
+}
+
+
+/* End of Styles for Footer Component */
