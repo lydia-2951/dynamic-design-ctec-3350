@@ -29,6 +29,7 @@
     position: relative;
 }
 
+
 body {
     background-color: #f8f8ff;
     padding: 20px;
@@ -76,10 +77,6 @@ td {
     padding: 15px;
 }
 
-td ul {
-    padding-bottom: 20px;
-}
-
 .strengths {
     background-color: #008000;
 }
@@ -103,7 +100,6 @@ td ul {
 .external {
     background-color: #008080;
 }
-
 /* End of styles for Creative Brief and SWOT Analysis */
 
 /* Beginning of styles for Grid System */
@@ -573,3 +569,83 @@ td ul {
 }
 
 /* End of styles for Subcategory Preview component */
+
+/* Beginning of styles for Service Banner component */
+    .service-banner-container {
+        padding: 4rem 2rem;
+        background-color: blanchedalmond;
+    }
+
+    .content .service-banner-img {
+        flex: 0 0 50%;  
+        -webkit-flex: 0 0 30%;
+        padding-top: 70%;  
+        position: relative;
+    }
+
+    .content .service-banner-img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .service-banner-content {
+        padding-top: 10px;
+    }
+
+    .service-banner-title {
+        padding: 5px 0px;
+    }
+
+    .service-banner-title h2 {
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    .service-banner-description {
+        line-height: 1.4rem;
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+    .service-banner-button button {
+        width: 130px;
+        height: 38px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: white;
+        color: #191919;
+        border: 2px solid #191919;
+        border-radius: 8px;
+        margin: 10px 0px 15px 0px; 
+    }
+
+    .service-banner-button button:hover {
+        background-color: black;
+        color: white;
+    }
+
+@media screen and (min-width: 768px){
+    .service-banner-row {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+    }
+  
+    .service-banner-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-left: 30px;        
+        }
+}
+/* End of styles for Service Banner component */
