@@ -1,10 +1,10 @@
-*, :before, :after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
+/* Project: Mansfield Gardens Website Redesign
+    Author: Dynamic Design
+    Date: 03.27.22
+    Last update: 03.25.22
+*/
 
+/* Variables for Grid System */
 :root {
     --col-1: calc((100% / 12) * 1);
     --col-2: calc((100% / 12) * 2);
@@ -20,68 +20,172 @@
     --col-12: calc((100% / 12) * 12);
 }
 
-/* Styles for Grid System */
-    .col-1 {
-        flex: 0 0 var(--col-1);
-        max-width: var(--col-1);
-    }
+*, :before, :after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 
-    .col-2 {
-        flex: 0 0 var(--col-2);
-        max-width: var(--col-2);
-    }
 
-    .col-3 {
-        flex: 0 0 var(--col-3);
-        max-width: var(--col-3);
-    }
+body {
+    background-color: #f8f8ff;
+    padding: 20px;
+    color: #000;
+}
 
-    .col-4 {
-        flex: 0 0 var(--col-4);
-        max-width: var(--col-4);
-    }
+header p {
+    font-family: copperplate;
+    font-size: 1.5rem;
+    color: #2f4f4f;
+        font-style: oblique;
+}
+    
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 3px;
+    padding: 3px;
+    font-style: oblique;
+}
 
-    .col-5 {
-        flex: 0 0 var(--col-5);
-        max-width: var(--col-5);
-    }
+h2 {
+    font-size: 1.8rem;
+}
 
-    .col-6 {
-        flex: 0 0 var(--col-6);
-        max-width: var(--col-6);
-    }
+footer {
+    margin-top: 1rem;
+}
 
-    .col-7 {
-        flex: 0 0 var(--col-7);
-        max-width: var(--col-7);
-    }
+/* Beginning of styles for Creative Brief and SWOT Analysis */
+table {
+    border-collapse: collapse;
+    border: 3px solid #000;
+    overflow: auto;
+}
 
-    .col-8 {
-        flex: 0 0 var(--col-8);
-        max-width: var(--col-8);
-    }
+th {
+    border: 3px solid #000;
+    color: #fff;
+    padding: 10px;
+}
 
-    .col-9 {
-        flex: 0 0 var(--col-9);
-        max-width: var(--col-9);
-    }
+td {
+    border: 3px solid #000;
+    padding: 15px;
+}
 
-    .col-10 {
-        flex: 0 0 var(--col-10);
-        max-width: var(--col-10);
-    }
+.strengths {
+    background-color: #008000;
+}
 
-    .col-11 {
-        flex: 0 0 var(--col-11);
-        max-width: var(--col-11);
-    }
+.weaknesses {
+    background-color: #ffa500;
+}
 
-    .col-12 {
-        flex: 0 0 var(--col-12);
-        max-width: var(--col-12);
-    }
+.opportunities {
+    background-color: #00f;
+}
 
-/* Small Screens */
+.threats {
+    background-color: #f00;
+}
+
+.internal {
+    background-color: #8a2be2;
+}
+
+.external {
+    background-color: #008080;
+}
+/* End of styles for Creative Brief and SWOT Analysis */
+
+/* Beginning of styles for Grid System */
+.container-fluid {
+    padding-top: 3rem;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+[class^='col-'] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col-1 {
+    flex: 0 0 var(--col-1);
+    max-width: var(--col-1);
+}
+
+.col-2 {
+    flex: 0 0 var(--col-2);
+    max-width: var(--col-2);
+}
+
+.col-3 {
+    flex: 0 0 var(--col-3);
+    max-width: var(--col-3);
+}
+
+.col-4 {
+    flex: 0 0 var(--col-4);
+    max-width: var(--col-4);
+}
+
+.col-5 {
+    flex: 0 0 var(--col-5);
+    max-width: var(--col-5);
+}
+
+.col-6 {
+    flex: 0 0 var(--col-6);
+    max-width: var(--col-6);
+}
+
+.col-7 {
+    flex: 0 0 var(--col-7);
+    max-width: var(--col-7);
+}
+
+.col-8 {
+    flex: 0 0 var(--col-8);
+    max-width: var(--col-8);
+}
+
+.col-9 {
+    flex: 0 0 var(--col-9);
+    max-width: var(--col-9);
+}
+
+.col-10 {
+    flex: 0 0 var(--col-10);
+    max-width: var(--col-10);
+}
+
+.col-11 {
+    flex: 0 0 var(--col-11);
+    max-width: var(--col-11);
+}
+
+.col-12 {
+    flex: 0 0 var(--col-12);
+    max-width: var(--col-12);
+}
+
+/* Small Screens = sm */
 @media screen and (min-width: 576px){
     .col-sm-1 {
         flex: 0 0 var(--col-1);
@@ -104,18 +208,18 @@
     }
 
     .col-sm-5 {
-    flex: 0 0 var(--col-5);
-    max-width: var(--col-5);
+        flex: 0 0 var(--col-5);
+        max-width: var(--col-5);
     }
 
     .col-sm-6 {
-    flex: 0 0 var(--col-6);
-    max-width: var(--col-6);
+        flex: 0 0 var(--col-6);
+        max-width: var(--col-6);
     }
 
     .col-sm-7 {
-    flex: 0 0 var(--col-7);
-    max-width: var(--col-7);
+        flex: 0 0 var(--col-7);
+        max-width: var(--col-7);
     }
 
     .col-sm-8 {
@@ -143,7 +247,8 @@
         max-width: var(--col-12);
     }
 }
-/* Medium Screens */
+
+/* Medium Screens = md */
 @media screen and (min-width: 768px){
     .col-md-1 {
         flex: 0 0 var(--col-1);
@@ -206,7 +311,7 @@
     }
 }
 
-/* Large Screens */
+/* Large Screens = lg */
 @media screen and (min-width: 992px){
     .col-lg-1 {
         flex: 0 0 var(--col-1);
@@ -269,7 +374,7 @@
     }
 }
 
-/* Extra Large Screens */
+/* Extra Large Screens = xl */
 @media screen and (min-width: 1200px){
     .col-xl-1 {
         flex: 0 0 var(--col-1);
@@ -331,9 +436,141 @@
         max-width: var(--col-12);
     }
 }
-/* End of Styles for Grid System */
 
-/* Banner Styles */  
+/* Extra Extra Large Screens = xxl */
+@media screen and (min-width: 1400px){
+    .col-xxl-1 {
+        flex: 0 0 var(--col-1);
+        max-width: var(--col-1);
+    }
+
+    .col-xxl-2 {
+        flex: 0 0 var(--col-2);
+        max-width: var(--col-2);
+    }
+
+    .col-xxl-3 {
+        flex: 0 0 var(--col-3);
+        max-width: var(--col-3);
+    }
+
+    .col-xxl-4 {
+        flex: 0 0 var(--col-4);
+        max-width: var(--col-4);
+    }
+
+    .col-xxl-5 {
+        flex: 0 0 var(--col-5);
+        max-width: var(--col-5);
+    }
+
+    .col-xxl-6 {
+        flex: 0 0 var(--col-6);
+        max-width: var(--col-6);
+    }
+
+    .col-xxl-7 {
+        flex: 0 0 var(--col-7);
+        max-width: var(--col-7);
+    }
+
+    .col-xxl-8 {
+        flex: 0 0 var(--col-8);
+        max-width: var(--col-8);
+    }
+
+    .col-xxl-9 {
+        flex: 0 0 var(--col-9);
+        max-width: var(--col-9);
+    }
+
+    .col-xxl-10 {
+        flex: 0 0 var(--col-10);
+        max-width: var(--col-10);
+    }
+
+    .col-xxl-11 {
+        flex: 0 0 var(--col-11);
+        max-width: var(--col-11);
+    }
+
+    .col-xxl-12 {
+        flex: 0 0 var(--col-12);
+        max-width: var(--col-12);
+    }
+}
+/* End of styles for Grid System */
+
+/* Beginning of styles for Subcategory Preview component */
+.subcat {
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.subcat-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 60%;
+    margin-bottom: 1rem;
+}
+
+.subcat-img img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.subcat-title {
+    margin-bottom: 0.5rem;
+}
+
+.subcat-description {
+
+}
+
+.subcat-button {
+
+}
+
+.subcat-button a {
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    padding: 0.5em 0.75em;
+    font-size: 1rem; 
+    font-weight: bold;
+    text-decoration:none;
+    display: block;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.subcat-button a:hover {
+    background-color: #ccc;
+}
+
+/* End of styles for Subcategory Preview component */
+
+/* Beginning of styles for Service Banner component */
     .service-banner-container {
         padding: 4rem 2rem;
         background-color: blanchedalmond;
@@ -357,17 +594,17 @@
         object-fit: cover;
     }
 
-    h2 {
-        font-weight: 800;
-        font-size: 2rem; 
-    }
-
     .service-banner-content {
         padding-top: 10px;
     }
 
     .service-banner-title {
         padding: 5px 0px;
+    }
+
+    .service-banner-title h2 {
+        font-weight: 800;
+        font-size: 2rem;
     }
 
     .service-banner-description {
@@ -410,6 +647,5 @@
         align-content: flex-start;
         padding-left: 30px;        
         }
-
 }
-/* End of Banner Styles */
+/* End of styles for Service Banner component */
