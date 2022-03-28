@@ -334,7 +334,7 @@
 /* End of Styles for Grid System */
 
 /* Banner Styles */  
-    .container {
+    .service-banner-container {
         padding: 4rem 2rem;
         background-color: blanchedalmond;
     }
@@ -356,6 +356,7 @@
         height: 100%;
         object-fit: cover;
     }
+
     h2 {
         font-weight: 800;
         font-size: 2rem; 
@@ -393,7 +394,7 @@
     }
 
 @media screen and (min-width: 768px){
-    .row {
+    .service-banner-row {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
