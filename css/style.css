@@ -59,6 +59,11 @@ footer {
     margin-top: 1rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Beginning of styles for Creative Brief and SWOT Analysis */
 table {
     border-collapse: collapse;
@@ -668,36 +673,21 @@ td {
 }
 /* End of styles for Service Banner component */
 
-/* Beginning of styles for Product Card component */    
 
-.category-description {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 5px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.category-description p {
-    font-size: 1.4rem;
-}
+/* product-container styles */
 
 .product-container > img {
     flex: 0 0 90%;
     max-width: 90%;
 }
-
-
 .product-img {
     flex: 0 0 90%;
     max-width: 90%;
     width: 100%;
 }
 
-
-@media screen and  (max-width: 992px)
-{
-    .row .product-container {
+@media screen and  (max-width: 992px){
+    .product-container {
        display:flex;
        flex-flow:row wrap;
        align-items:flex-start;
@@ -737,5 +727,3 @@ td {
         max-width: calc(60% - 1rem);
     }
 } 
-
-/* End of styles for Product Card component */
