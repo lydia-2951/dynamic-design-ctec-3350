@@ -594,31 +594,29 @@ td {
 /* End of styles for Subcategory Preview component */
 
 /* Beginning of styles for Service Banner component */
+body.service {
+    padding: 0;  
+}
+
+.service-banner-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .service-banner-container {
     padding: 4rem 2rem;
-    background-color: #ffebcd;
+    background-color: blanchedalmond;
 }
 
-.content .service-banner-img {
-    flex: 0 0 50%;  
-    -webkit-flex: 0 0 30%;
-    padding-top: 70%;  
-    position: relative;
-}
-
-.content .service-banner-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.service-banner-img img {
+    flex: 0 0 100%;
+    max-width: 100%;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .service-banner-content {
-    padding-top: 10px;
+
 }
 
 .service-banner-title {
