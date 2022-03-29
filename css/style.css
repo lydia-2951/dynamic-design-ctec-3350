@@ -674,7 +674,7 @@ td {
 /* End of styles for Service Banner component */
 
 
-/* product-container styles */
+/* Beginning of styles for Product Card component */
 
 .product-container > img {
     flex: 0 0 90%;
@@ -727,3 +727,5 @@ td {
         max-width: calc(60% - 1rem);
     }
 } 
+
+/* End of styles for Service Banner component */
