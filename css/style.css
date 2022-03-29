@@ -571,15 +571,20 @@ td {
 /* End of styles for Subcategory Preview component */
 
 /* Beginning of styles for Service Banner component */
+    body.service {
+        padding: 0;  
+    }
 
     .service-banner-row {
         margin-left: 0;
         margin-right: 0;
     }
+
     .service-banner-container {
         padding: 4rem 2rem;
         background-color: blanchedalmond;
     }
+
     .service-banner-img img {
         flex: 0 0 100%;
         max-width: 100%;
@@ -639,8 +644,6 @@ td {
         align-items: flex-start;
         align-content: flex-start;
         padding-left: 30px;        
-        }
-    
-
+    }
 }
 /* End of styles for Service Banner component */
