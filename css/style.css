@@ -605,7 +605,7 @@ body.service {
 
 .service-banner-container {
     padding: 4rem 2rem;
-    background-color: blanchedalmond;
+    background-color: #ffebcd;
 }
 
 .service-banner-img img {
@@ -616,7 +616,6 @@ body.service {
 }
 
 .service-banner-content {
-
 }
 
 .service-banner-title {
