@@ -1,7 +1,7 @@
 /* Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design
-    Date: 03.27.22
-    Last update: 03.25.22
+    Date: 03.29.22
+    Last update: 03.29.22
 */
 
 /* Variables for Grid System */
@@ -40,7 +40,7 @@ header p {
     font-family: copperplate;
     font-size: 1.5rem;
     color: #2f4f4f;
-        font-style: oblique;
+    font-style: oblique;
 }
     
 h1 {
@@ -104,10 +104,28 @@ td {
 
 /* Beginning of styles for Grid System */
 .container-fluid {
-    padding-top: 3rem;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 3rem 1rem 0;
+}
+
+@media screen and (min-width: 576px) {
+    .container { max-width: 576px; }
+}
+
+@media screen and (min-width: 768px) {
+    .container { max-width: 768px; }
+}
+
+@media screen and (min-width: 992px) {
+    .container { max-width: 992px; }
+}
+
+@media screen and (min-width: 1200px) {
+    .container { max-width: 1200px; }
+}
+
+@media screen and (min-width: 1400px) {
+    .container { max-width: 1400px; }
 }
 
 .row {
@@ -567,14 +585,13 @@ td {
 .subcat-button a:hover {
     background-color: #ccc;
 }
-
 /* End of styles for Subcategory Preview component */
 
 /* Beginning of styles for Service Banner component */
-    .service-banner-container {
-        padding: 4rem 2rem;
-        background-color: blanchedalmond;
-    }
+.service-banner-container {
+    padding: 4rem 2rem;
+    background-color: #ffebcd;
+}
 
     .content .service-banner-img {
         flex: 0 0 50%;  
