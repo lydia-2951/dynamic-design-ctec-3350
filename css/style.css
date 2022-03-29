@@ -1,7 +1,7 @@
 /* Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design
-    Date: 03.27.22
-    Last update: 03.25.22
+    Date: 03.29.22
+    Last update: 03.29.22
 */
 
 /* Variables for Grid System */
@@ -40,7 +40,7 @@ header p {
     font-family: copperplate;
     font-size: 1.5rem;
     color: #2f4f4f;
-        font-style: oblique;
+    font-style: oblique;
 }
     
 h1 {
@@ -57,6 +57,11 @@ h2 {
 
 footer {
     margin-top: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Beginning of styles for Creative Brief and SWOT Analysis */
@@ -104,10 +109,28 @@ td {
 
 /* Beginning of styles for Grid System */
 .container-fluid {
-    padding-top: 3rem;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 3rem 1rem 0;
+}
+
+@media screen and (min-width: 576px) {
+    .container { max-width: 576px; }
+}
+
+@media screen and (min-width: 768px) {
+    .container { max-width: 768px; }
+}
+
+@media screen and (min-width: 992px) {
+    .container { max-width: 992px; }
+}
+
+@media screen and (min-width: 1200px) {
+    .container { max-width: 1200px; }
+}
+
+@media screen and (min-width: 1400px) {
+    .container { max-width: 1400px; }
 }
 
 .row {
@@ -521,6 +544,7 @@ td {
     align-content: center;
     align-items: center;
     flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
     padding-top: 60%;
@@ -567,66 +591,65 @@ td {
 .subcat-button a:hover {
     background-color: #ccc;
 }
-
 /* End of styles for Subcategory Preview component */
 
 /* Beginning of styles for Service Banner component */
-    body.service {
-        padding: 0;  
-    }
+body.service {
+    padding: 0;  
+}
 
-    .service-banner-row {
-        margin-left: 0;
-        margin-right: 0;
-    }
+.service-banner-row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
-    .service-banner-container {
-        padding: 4rem 2rem;
-        background-color: blanchedalmond;
-    }
+.service-banner-container {
+    padding: 4rem 2rem;
+    background-color: blanchedalmond;
+}
 
-    .service-banner-img img {
-        flex: 0 0 100%;
-        max-width: 100%;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+.service-banner-img img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
 
-    .service-banner-content {
-    
-    }
+.service-banner-content {
 
-    .service-banner-title {
-        padding: 5px 0px;
-    }
+}
 
-    .service-banner-title h2 {
-        font-weight: 800;
-        font-size: 2rem;
-    }
+.service-banner-title {
+    padding: 5px 0px;
+}
 
-    .service-banner-description {
-        line-height: 1.4rem;
-        font-size: 18px;
-        padding-bottom: 5px;
-    }
+.service-banner-title h2 {
+    font-weight: 800;
+    font-size: 2rem;
+}
 
-    .service-banner-button button {
-        width: 130px;
-        height: 38px;
-        font-size: 14px;
-        font-weight: bold;
-        background-color: white;
-        color: #191919;
-        border: 2px solid #191919;
-        border-radius: 8px;
-        margin: 10px 0px 15px 0px; 
-    }
+.service-banner-description {
+    line-height: 1.4rem;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
 
-    .service-banner-button button:hover {
-        background-color: black;
-        color: white;
-    }
+.service-banner-button button {
+    width: 130px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #191919;
+    border: 2px solid #191919;
+    border-radius: 8px;
+    margin: 10px 0px 15px 0px; 
+}
+
+.service-banner-button button:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 @media screen and (min-width: 768px){
     .service-banner-row {
@@ -646,4 +669,61 @@ td {
         padding-left: 30px;        
     }
 }
+/* End of styles for Service Banner component */
+
+
+/* Beginning of styles for Product Card component */
+
+.product-container > img {
+    flex: 0 0 90%;
+    max-width: 90%;
+}
+.product-img {
+    flex: 0 0 90%;
+    max-width: 90%;
+    width: 100%;
+}
+
+@media screen and  (max-width: 992px){
+    .product-container {
+       display:flex;
+       flex-flow:row wrap;
+       align-items:flex-start;
+       align-content:flex-start;
+       justify-content:space-around;
+    }
+    .product-container {
+       padding-bottom: 2rem;
+    }
+    .product-container > img {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .product-img {
+        flex: 0 0 40;
+        max-width: 40%;
+        width: 100%;
+        padding-right: 5%;
+
+    }
+    .product-description {
+
+    }
+    .product-img > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .product-container .product-description {
+        flex: 0 0 calc(60% - 1rem);
+        max-width: calc(60% - 1rem);
+    }
+} 
+
 /* End of styles for Service Banner component */
