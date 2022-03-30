@@ -624,7 +624,6 @@ td {
         background-color: black;
         color: #fff;
       }
-
 /* End of styles for Service Banner component */
 
 
@@ -681,5 +680,54 @@ td {
         max-width: calc(60% - 1rem);
     }
 } 
+/* End of styles for Product Card component */
 
-/* End of styles for Product card component */
+/* Beginning of styles for Footer Component */
+.footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: 1rem;
+    background-color: #ffebcd;
+    border: 3px solid #000000;
+  }
+
+  footer img {
+
+       max-width: 3rem;
+       padding: .15rem;
+  } 
+
+  .footer-socialbuttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  }
+
+  .footer-text {
+    display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  }
+
+  .footer-directions {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-around;
+      align-content: center;
+      border: 2px solid #000000;
+      background-color: #d3d3d3;
+      padding: 1rem;
+      margin: 1rem ;
+      }
+
+  /* End of Styles for Footer Component */
