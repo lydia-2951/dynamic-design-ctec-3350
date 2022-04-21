@@ -1,11 +1,16 @@
 /* Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design
-    Date: 03.29.22
-    Last update: 03.29.22
+    Date: 04.20.22
+    Last update: 04.20.22
 */
 
-/* Variables for Grid System */
+/* Import text font and Font Awesome icons */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
 :root {
+    /* Variables for Grid System */
     --col-1: calc((100% / 12) * 1);
     --col-2: calc((100% / 12) * 2);
     --col-3: calc((100% / 12) * 3);
@@ -18,42 +23,73 @@
     --col-10: calc((100% / 12) * 10);
     --col-11: calc((100% / 12) * 11);
     --col-12: calc((100% / 12) * 12);
+
+    /* Variables for color scheme */
+    --primary: #266150;
+    --secondary: #ffdf6c;
+    --secondary-hover: #d4b959;
+    --background:  #feecd8;
+    --light: #e5e5e5;
+    --dark: #483c32;
+    --text: var(--dark);
+    --text-hover: #120f0c;
 }
 
 /* General styles */
 *, :before, :after {
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.1rem;
     margin: 0;
     padding: 0;
     position: relative;
 }
 
+html {
+    font-size: clamp(16px, 3vw, 30px);
+}
 
 body {
-    background-color: #f8f8ff;
+    font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
+    font-size: 1rem;
+    line-height: 1.618em;
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
     padding: 20px;
-    color: #000;
 }
 
-header p {
-    font-family: copperplate;
-    font-size: 1.5rem;
-    color: #2f4f4f;
-    font-style: oblique;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', 'Baskerville', 'Times New Roman', serif;
+    line-height: 1.618em;
 }
-    
+
 h1 {
-    text-align: center;
-    font-size: 2.2rem;
+    font-size: 4.236rem;
     margin: 0.5rem 1rem 2rem;
     padding: 3px;
-    font-style: oblique;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.618rem;
+}
+
+h3, .h3 {
+    font-size: 1.618rem;
+}
+
+h4, .h4 {
+    font-size: 1rem;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+em, i {
+    font-style: italic;
+}
+
+a:hover {
+    color: var(--text-hover);
 }
 
 footer {
@@ -66,6 +102,13 @@ img {
 }
 
 /* Beginning of styles for Creative Brief and SWOT Analysis */
+header p {
+    font-family: copperplate;
+    font-size: 1.5rem;
+    color: #2f4f4f;
+    font-style: oblique;
+}
+
 table {
     border-collapse: collapse;
     border: 3px solid #000;
@@ -527,8 +570,8 @@ td {
 
 /* Beginning of styles for Subcategory Preview component */
 .subcat {
-    color: #fff;
-    background-color: #000;
+    color: var(--light);
+    background-color: var(--primary);
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -536,6 +579,7 @@ td {
     align-items: flex-start;
     padding: 3rem;
     margin-bottom: 2rem;
+    border: 3px solid var(--dark);
 }
 
 .subcat-img {
@@ -561,6 +605,7 @@ td {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border: 3px solid var(--light);
 }
 
 .subcat-title {
@@ -576,8 +621,9 @@ td {
 }
 
 .subcat-button a {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 3px solid var(--dark);
     border-radius: 0.5rem;
     padding: 0.5em 0.75em;
     font-size: 1rem; 
@@ -589,7 +635,7 @@ td {
 }
 
 .subcat-button a:hover {
-    background-color: #ccc;
+    background-color: var(--secondary-hover);
 }
 /* End of styles for Subcategory Preview component */
 
@@ -597,7 +643,13 @@ td {
 
 .service-container {
     padding: 4rem 2rem;
-    background-color: #ffebcd;
+    background-color: var(--primary);
+    color: var(--light);
+    border: 3px solid var(--dark);
+}
+
+.service-banner-img img{
+    border: 3px solid var(--light);
 }
 
 .service-banner-content h2 {
@@ -609,20 +661,19 @@ td {
 }
 
 .service-banner-content a {
-    background-color: #fff;
-    color: #191919;
+    background-color: var(--secondary);
+    color: var(--text);
     padding: 10px 15px;
     text-decoration: none;
     display: inline-block;
-    border: 2px solid #191919;
+    border: 3px solid var(--dark);
     border-radius: 8px;
     font-size: 1rem;
     font-weight: bold;
 }
 
 .service-banner-content a:hover {
-        background-color: #000;
-        color: #fff;
+        background-color: var(--secondary-hover);
       }
 /* End of styles for Service Banner component */
 
@@ -651,6 +702,10 @@ td {
     flex: 0 0 90%;
     max-width: 90%;
     width: 100%;
+}
+
+.product-img img {
+    border: 3px solid var(--dark);
 }
 
 @media screen and  (max-width: 992px){
@@ -695,8 +750,8 @@ td {
     margin-left: -1rem;
     margin-right: -1rem;
     margin-top: 1rem;
-    background-color: #ffebcd;
-    border: 3px solid #000000;
+    background-color: var(--primary);
+    color: var(--light);
     padding: 1rem;
 }
 
@@ -727,17 +782,36 @@ footer img {
     align-items: center;
     justify-content: space-around;
     align-content: center;
-    border: 2px solid #000000;
-    background-color: #d3d3d3;
+    border: 3px solid var(--dark);
+    background-color: var(--secondary);
     padding: 1rem;
     margin: 1rem;
     border-radius: 8px;
-    color: #000;
+    color: var(--text);
     text-decoration: none;
+    font-weight: bold;
 }
 
 .footer-directions a:hover {
-    background-color: #000;
-    color: #d3d3d3;
+    background-color: var(--secondary-hover);
 }
-  /* End of Styles for Footer component */
+/* End of styles for Footer component */
+
+/* Beginning of styles for the error pages */
+.error-img img {
+    border: 3px solid var(--dark);
+}
+
+.error-links a {
+    color: var(--text);
+    font-weight: bold;
+}
+
+.error-links a:hover {
+    color: var(--text-hover);
+}
+
+.error-links ul {
+    list-style-type: none;
+}
+/* End of styles for the error pages */
