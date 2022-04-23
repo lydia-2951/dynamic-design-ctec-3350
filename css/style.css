@@ -815,3 +815,82 @@ footer img {
     list-style-type: none;
 }
 /* End of styles for the error pages */
+
+
+/* Beginning of Submission Form Styles */
+
+/* For now I gave the form a class of 'service-form' but we can rename it if we decide to use the same styles across all forms */
+.service-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  border: 2px solid var(--primary);
+  padding: 2rem;
+}
+
+/* Styles for the input fields and text areas */
+.form-control > input,
+.form-control > textarea { 
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+  font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit; 
+}
+
+.form-control > input:focus,
+.form-control > textarea:focus {
+
+
+}
+
+/* Make the 'required' fields have a red border */
+.form-control > input:required,
+.form-control > textarea:required {
+  border-color: red;
+  outline-color: red;
+}
+
+/* Remove red border from the 'required' fields when user starts typing */
+.form-control > input:valid, 
+.form-control > textarea:valid {
+  outline-color:inherit;
+  border-color: inherit;
+}
+
+/* Styles for the labels: add spacing and bold text */
+.form-group > label {
+  display: block;
+  padding: 1rem 0 0;
+  font-weight: 600;
+}
+
+/* Styles for 'submit' button */
+.form-group input[type=submit] { 
+  background-color: var(--primary);
+  border: 2px solid var(--dark);
+  color: var(--light);
+  margin: 1rem 0;
+  width: auto;
+}
+
+/* Styles for hovering over the 'submit' button */
+.form-group input[type=submit]:hover { 
+  background-color: #2B6E5B;
+  cursor: pointer;
+}
+
+/* Center the 'submit' button */
+.submit.form-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+/* End of Submission Form Styles */
