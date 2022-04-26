@@ -26,13 +26,14 @@
 
     /* Variables for color scheme */
     --primary: #266150;
+    --primary-hover: #183D33;
     --secondary: #ffdf6c;
     --secondary-hover: #d4b959;
     --background:  #feecd8;
     --light: #e5e5e5;
     --dark: #483c32;
     --text: var(--dark);
-    --text-hover: #120f0c;
+    /* --text-hover: #120f0c; */
 }
 
 /* General styles */
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 1.953rem;
-    margin: 0.5rem 1rem 2rem;
+    margin: 1rem 0;
     padding: 3px;
 }
 
@@ -88,8 +89,12 @@ em, i {
     font-style: italic;
 }
 
+a {
+    color: var(--primary);
+}
+
 a:hover {
-    color: var(--text-hover);
+    color: var(--primary-hover);
 }
 
 footer {
@@ -825,12 +830,7 @@ footer img {
 }
 
 .error-links a {
-    color: var(--text);
     font-weight: bold;
-}
-
-.error-links a:hover {
-    color: var(--text-hover);
 }
 
 .error-links ul {
@@ -915,7 +915,7 @@ footer img {
 }
 
 /* End of Submission Form Styles */
-=======
+
 /* About Us Styles */
 .aboutus-img {
     display: flex;
@@ -947,17 +947,17 @@ footer img {
 .aboutus-mission-header {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .aboutus-mission {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: center;
+    align-content: center;
 }
 
 .aboutus-mission p {
