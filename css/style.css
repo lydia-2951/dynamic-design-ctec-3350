@@ -798,8 +798,30 @@ footer img {
 /* End of styles for Footer component */
 
 /* Beginning of styles for the error pages */
+.error-img {
+   max-width: 70%;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-content: flex-start;
+   align-items: flex-start;
+   flex: 0 0 100%;
+   -webkit-flex: 0 0 100%;
+}
+
 .error-img img {
     border: 3px solid var(--dark);
+    max-width: 40%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page-title.error-title h1{
+    margin: 1rem 0;
+}
+
+.error-text {
+    margin: 3rem 0 2rem;
 }
 
 .error-links a {
@@ -815,7 +837,6 @@ footer img {
     list-style-type: none;
 }
 /* End of styles for the error pages */
-
 
 /* Beginning of Submission Form Styles */
 
@@ -894,3 +915,53 @@ footer img {
 }
 
 /* End of Submission Form Styles */
+=======
+/* About Us Styles */
+.aboutus-img {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.aboutus-img img {
+    border: 3px solid var(--dark);
+    
+}
+
+.aboutus-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom:2rem ;
+}
+
+.aboutus-content p {
+    padding: .5rem;
+}
+
+.aboutus-mission-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.aboutus-mission {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.aboutus-mission p {
+    color: var(--primary);
+    font-weight: 700;
+}
+/* End of About Us Styles */
