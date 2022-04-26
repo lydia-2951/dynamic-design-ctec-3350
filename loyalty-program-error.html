@@ -1,102 +1,88 @@
 <!doctype html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <meta name="keywords" content="Mansfield Gardens, services, maintenance, landscape, lawn, flowers, garden">
-            <meta name="description" content="This is the webistes' service request error page that will be displayed to notify users that there was an error while submitting their service request">
-            <meta name="author" content="Dynamic Design">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name= "keywords" content= "">
+        <meta name= "description" content= "This is the websites' loyalty program error page that will be displayed to notify users that there was an error while signing up for MG Rewards">
+        <meta name= "author" content= "Dynamic Design">
 
-            <title> Service Request Error | Dynamic Design</title>
+        <title>Sign-Up Error | Dynamic Design</title>
 
-            <link rel="stylesheet" href="css/style.css">
+        <link rel= "stylesheet" href="css/style.css">
 
-            <!-- The @import font link goes here -->
+        <!--The @import font link goes here-->
 
-        </head>
+    </head>
 
-        <body>
-            <header>
-                <!-- Header here-->
-            </header>
+    <body>
+        <header>
+            <!-- Header here -->
+        </header>
 
-            <nav>
-                <!-- Nav here -->
-            </nav>
+        <nav>
+            <!-- Navigation here -->
+        </nav>
 
-            <main>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
+        <main>
 
-                            <form method="post" action="registration.php" name="registration" class="service-form">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form method="post" action="registration.php" name="registration" class="service-form">
 
-                                <div class="form-title">
-                                    <h2>Free Services Estimate</h2>
-                                    <h3>Please fill out the information below to request an estimate.</h3>
+                            <div class="loyalty-text">
+                                <h1>MG Rewards Loyalty Program</h1>
+                                <h2>Enjoy fresh deals and lively perks!</h2>
+                                <p>It's free to join, and takes almost no time at all.<br> Receive goodies on your birthday, exclusive offers, weekly newsletters, coupons and more.<br> Please fill out your information below to join.</p>
+                            </div>
+
+                            <div class="error-message">
+                                One or more fields has an error, please check and try again.
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="full-name">Name</label>
+                                <div class="form-control">
+                                    <input type="text" name="full-name" id="full-name" placeholder="Full name" max-length="30" autocomplete="off" />
                                 </div>
+                            </div>
 
-                                <div class="error-message">
-                                    One or more fields has an error, please check and try again.
+                            <div class="form-group">
+                                <label for="date">Birthdate</label>
+                                <div class="form-control">
+                                    <input type="text" name="phone-number" id="phone-number" placeholder="MM/DD/YY" max-length="30" autocomplete="off" />
                                 </div>
-                                
-                                <div class="form-group">
-                                    <label for="full-name">Name</label>
-                                    <div class="form-control">
-                                        <input type="text" name="full-name" id="full-name" placeholder="Full name" max-length="30" autocomplete="off" />
-                                    </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone-number">Phone</label>
+                                <div class="form-control">
+                                    <input type="text" name="email" id="email" placeholder="Phone number" max-length="30" autocomplete="off" />
                                 </div>
+                            </div>
 
-                                <div class="form-group">
-                                    <label for="phone-number">Phone</label>
-                                    <div class="form-control">
-                                        <input type="text" name="phone-number" id="phone-number" placeholder="Phone number" max-length="30" autocomplete="off" />
-                                    </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="form-control">
+                                    <input required type="text" name="email" id="email" placeholder="Email address*" max-length="30" autocomplete="off" />
                                 </div>
+                            </div>
 
-                                <div class="form-group">
-                                    <label for="email">Email*</label>
-                                    <div class="form-control">
-                                        <input required type="text" name="email" id="email" placeholder="Email" max-length="30" autocomplete="off" />
-                                    </div>
+                            <div class="submit form-group">
+                                <div class="form-control">
+                                    <input type="submit" name="submit" id="submit" value="Submit" />
                                 </div>
+                            </div>
 
-                                <div class="form-group">
-                                    <label for="location">Location*</label>
-                                    <div class="form-control">
-                                        <input required type="text" name="location" id="location" placeholder="Your location" max-length="30" autocomplete="off" />
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="comments">Your Request</label>
-                                    <div class="form-control">
-                                        <textarea id="comments" name="comments" maxlength="200" placeholder="What would you like an estimate for?"></textarea>
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="comments">Additional Comments</label>
-                                    <div class="form-control">
-                                       <textarea id="comments" name="comments" maxlength="200" placeholder="Any additional requests/comments"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="submit form-group">
-                                    <div class="form-control">
-                                        <input type="submit" name="submit" id="submit" value="Submit" />
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
+                        </form>
                     </div>
-                </div>    
-            </main>
+                </div>
+            </div>
+        </main>
 
-            <footer>
-                <!-- Footer here-->
-            </footer>
-        </body>
-    </html>
+        <footer>
+            <!-- Footer goes here -->
+        </footer>
+    </body>
+</html>
