@@ -58,18 +58,18 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Georgia', 'Baskerville', 'Times New Roman', serif;
     line-height: 1.25em;
 }
 
-h1 {
+h1, .h1 {
     font-size: 1.953rem;
     margin: 1rem 0;
     padding: 3px;
 }
 
-h2 {
+h2, .h2 {
     font-size: 1.563rem;
 }
 
@@ -582,7 +582,7 @@ td {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-    padding: 3rem;
+    padding: 2rem;
     margin-bottom: 2rem;
     border: 3px solid var(--dark);
 }
