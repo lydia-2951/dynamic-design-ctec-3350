@@ -815,3 +815,53 @@ footer img {
     list-style-type: none;
 }
 /* End of styles for the error pages */
+
+/* About Us Styles */
+.aboutus-img {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.aboutus-img img {
+    border: 3px solid var(--dark);
+    
+}
+
+.aboutus-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom:2rem ;
+}
+
+.aboutus-content p {
+    padding: .5rem;
+}
+
+.aboutus-mission-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.aboutus-mission {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.aboutus-mission p {
+    color: var(--primary);
+    font-weight: 700;
+}
+/* End of About Us Styles */
