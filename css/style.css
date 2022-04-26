@@ -887,3 +887,14 @@ footer img {
     font-weight: 700;
 }
 /* End of About Us Styles */
+
+/* Contact Styles */
+.contact-social-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+/* End of Contact Style */
