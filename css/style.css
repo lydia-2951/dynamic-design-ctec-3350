@@ -26,13 +26,14 @@
 
     /* Variables for color scheme */
     --primary: #266150;
+    --primary-hover: #183D33;
     --secondary: #ffdf6c;
     --secondary-hover: #d4b959;
     --background:  #feecd8;
     --light: #e5e5e5;
     --dark: #483c32;
     --text: var(--dark);
-    --text-hover: #120f0c;
+    /* --text-hover: #120f0c; */
 }
 
 /* General styles */
@@ -57,18 +58,18 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Georgia', 'Baskerville', 'Times New Roman', serif;
     line-height: 1.25em;
 }
 
-h1 {
+h1, .h1 {
     font-size: 1.953rem;
-    margin: 0.5rem 1rem 2rem;
+    margin: 1rem 0;
     padding: 3px;
 }
 
-h2 {
+h2, .h2 {
     font-size: 1.563rem;
 }
 
@@ -88,8 +89,12 @@ em, i {
     font-style: italic;
 }
 
+a {
+    color: var(--primary);
+}
+
 a:hover {
-    color: var(--text-hover);
+    color: var(--primary-hover);
 }
 
 footer {
@@ -577,7 +582,7 @@ td {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-    padding: 3rem;
+    padding: 2rem;
     margin-bottom: 2rem;
     border: 3px solid var(--dark);
 }
@@ -825,18 +830,107 @@ footer img {
 }
 
 .error-links a {
-    color: var(--text);
     font-weight: bold;
-}
-
-.error-links a:hover {
-    color: var(--text-hover);
 }
 
 .error-links ul {
     list-style-type: none;
 }
 /* End of styles for the error pages */
+
+/* Beginning of Submission Form Styles */
+
+/* I gave the form a class of 'service-form' but can remove it if we decide to use the same styles for all forms */
+.service-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  border: 2px solid var(--primary);
+  padding: 2rem;
+}
+
+/* Styles for the input fields and text areas */
+.form-control > input,
+.form-control > textarea { 
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+  font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit; 
+}
+
+.form-control > input:focus,
+.form-control > textarea:focus {
+
+
+}
+
+/* Make the 'required' fields have a red border */
+.form-control > input:required,
+.form-control > textarea:required {
+  border-color: red;
+  outline-color: red;
+}
+
+/* Remove red border from the 'required' fields when user starts typing */
+.form-control > input:valid, 
+.form-control > textarea:valid {
+  outline-color:inherit;
+  border-color: inherit;
+}
+
+/* Styles for the labels: add spacing and bolder text */
+.form-group > label {
+  display: block;
+  padding: 1rem 0 0;
+  font-weight: 600;
+}
+
+/* Styles for the 'submit' button */
+.form-group input[type=submit] { 
+  background-color: var(--primary);
+  border: 2px solid var(--dark);
+  color: var(--light);
+  margin: 1rem 0;
+  width: auto;
+}
+
+/* Styles for hovering over the 'submit' button */
+.form-group input[type=submit]:hover { 
+  background-color: #2B6E5B;
+  cursor: pointer;
+}
+
+/* In order to center-align the 'submit' button I added a class of 'submit' to the 'form-group' div in HTML. I selected that div here and made it a flexbox item so that I could then center it */
+.submit.form-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.error-message {
+  background-color: #FFF1F1;
+  border: 2px solid #E81A1A;
+  padding: 1rem;
+  color: #e81a1a;
+  font-weight: bold;
+}
+
+.page-text { /* For sign-up success page */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+/* End of Submission Form Styles */
 
 /* About Us Styles */
 .aboutus-img {
@@ -869,17 +963,17 @@ footer img {
 .aboutus-mission-header {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .aboutus-mission {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: center;
+    align-content: center;
 }
 
 .aboutus-mission p {
