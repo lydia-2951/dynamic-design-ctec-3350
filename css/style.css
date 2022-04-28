@@ -838,7 +838,7 @@ footer img {
 }
 /* End of styles for the error pages */
 
-/* Beginning of Submission Form styles */
+/* Beginning of Form Styles */
 
 /* I gave the form a class of 'service-form' but can rename if we decide to use the same styles for all forms */
 .service-form {
@@ -916,7 +916,6 @@ footer img {
   font-weight: bold;
 }
 
-/* Error and Success buttons padding, gave each a class of "btn btn-secondary" */
 .btn.btn-secondary {
   padding: 0 1rem 0 0;
 }
@@ -929,6 +928,25 @@ footer img {
   align-content: flex-start ;
   justify-content: center;
 }
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn.btn-primary:hover {
+  background-color: #2B6E5B;
+  cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
+}
+
 /* End of Submission Form styles */
 
 /* About Us Styles */
