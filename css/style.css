@@ -689,6 +689,7 @@ td {
     align-items:flex-start;
     align-content:flex-start;
     justify-content:flex-start;
+    margin-bottom: 1.5rem;
 }
 
 .product-container > img {
@@ -711,6 +712,7 @@ td {
 
 .product-img img {
     border: 3px solid var(--dark);
+    width: 100%;
 }
 
 @media screen and  (max-width: 992px){
