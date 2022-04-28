@@ -992,3 +992,79 @@ footer img {
 }
 
 /* End of Contact Style */
+
+/* Header Styles */
+nav {
+    display:flexbox;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content:  flex-start;
+    justify-content: space-between;
+
+}
+.navbar-brand {
+    display: block; 
+    overflow: hidden;
+    background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain transparent;
+    text-indent: -999999999px;
+    flex: 0 0 calc(100% - 3rem);
+    max-width: calc(100% - 3rem);
+}
+
+.navbar-toggler {
+    border: 0 none;
+    background-color: transparent;
+    color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+.navbar {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
+}
+
+.navbar.open {
+    display: block;
+}
+.navbar, 
+.navbar ul,
+.navbar li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a:link,
+.navbar a:active,
+.navbar a:hover,
+.navbar a:visited {
+    display: block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+
+}
+
+@media screen and (min-width:768px) {
+    .navbar { 
+        display: block;
+    }
+
+    .navbar-brand {
+        flex: 0 0 calc(100% - 3rem);
+    max-width: calc(100% - 3rem);
+    }
+
+    .navbar {
+        flex: 0 1 calc(100% - 220px);
+        max-width: 0 1 calc(100% - 220px); 
+    }
+    
+
+}
+/* End of Header Styles */
