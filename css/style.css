@@ -574,17 +574,26 @@ td {
 /* End of styles for Grid System */
 
 /* Beginning of styles for Subcategory Preview component */
+.subcat-wrapper {
+    align-items: stretch;
+}
+
+.subcat-wrapper >div {
+    margin-bottom: 2rem;
+}
+
 .subcat {
     color: var(--light);
     background-color: var(--primary);
-    display: flex;
-    flex-flow: column wrap;
+    display: inline-flex;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
     padding: 2rem;
     margin-bottom: 2rem;
     border: 3px solid var(--dark);
+    height: 100%;
 }
 
 .subcat-img {
