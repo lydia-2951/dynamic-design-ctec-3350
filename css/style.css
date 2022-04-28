@@ -840,9 +840,9 @@ footer img {
 }
 /* End of styles for the error pages */
 
-/* Beginning of Submission Form Styles */
+/* Beginning of Submission Form styles */
 
-/* I gave the form a class of 'service-form' but can remove it if we decide to use the same styles for all forms */
+/* I gave the form a class of 'service-form' but can rename if we decide to use the same styles for all forms */
 .service-form {
   max-width: 800px;
   margin: 2rem auto;
@@ -865,20 +865,14 @@ footer img {
   color: inherit; 
 }
 
-.form-control > input:focus,
-.form-control > textarea:focus {
-
-
-}
-
-/* Make the 'required' fields have a red border */
+/* Make the 'required' fields have a red border (only for error page) */
 .form-control > input:required,
 .form-control > textarea:required {
   border-color: red;
   outline-color: red;
 }
 
-/* Remove red border from the 'required' fields when user starts typing */
+/* Remove red border from the 'required' fields when user starts typing (error page) */
 .form-control > input:valid, 
 .form-control > textarea:valid {
   outline-color:inherit;
@@ -924,15 +918,20 @@ footer img {
   font-weight: bold;
 }
 
-.page-text { /* For sign-up success page */
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: flex-start;
+/* Error and Success buttons padding, gave each a class of "btn btn-secondary" */
+.btn.btn-secondary {
+  padding: 0 1rem 0 0;
 }
 
-/* End of Submission Form Styles */
+/* Center the buttons that lead to the success and error pages */
+.form-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start ;
+  align-content: flex-start ;
+  justify-content: center;
+}
+/* End of Submission Form styles */
 
 /* About Us Styles */
 .aboutus-img {
