@@ -1099,3 +1099,34 @@ nav {
 
 }
 /* End of Header Styles */
+
+/* Home Page Styles */
+.home-heroimage {
+background-image: url(..//img/471338755.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 89%;
+border: 3px solid var(--dark);
+display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-tagline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+/* End of Home Page Styles */
