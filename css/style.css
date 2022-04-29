@@ -1078,3 +1078,17 @@ nav {
 
 }
 /* End of Header Styles */
+
+/* Home Page Styles */
+.home-heroimage {
+    background-image: url('../img/471338755.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* End Of Home Page Styles */
