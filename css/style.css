@@ -1036,10 +1036,6 @@ footer img {
   padding: 1rem 0;
 }
 
-.service-text {
-  border-bottom: 2px solid var(--primary);
-}
-
 .service-text h1 {
   padding-bottom: 1rem;
 }
