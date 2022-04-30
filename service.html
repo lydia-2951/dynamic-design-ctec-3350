@@ -17,19 +17,19 @@
 
         <body>
             <header>
-                <!-- Header here-->
-            </header>
+                <nav>
 
-            <nav>
-                <!-- Nav here -->
-            </nav>
+                </nav>
+            </header>
 
             <main>
             
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>Services</h1>
+                            <div class="service-text">
+                                <h1>Services</h1>
+                            </div>
                         </div>
 
                         <div class="col-sm-12 col-md-7">
@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="service-description">
                                     <h3>Lawn Maintenance</h3>
-                                    <a href="#request" title="Estimate button" class="btn btn-primary">Request Estimate</a>
+                                    <a href="#request" title="Estimate button" class="btn btn-service">Request Estimate</a>
                                 </div>
                             </div>
                         </div>    
@@ -50,7 +50,18 @@
                                 </div>
                                 <div class="service-description">
                                     <h3>Stone & Rock Installation</h3>
-                                    <a href="#request" title="Estimate button" class="btn btn-primary">Request Estimate</a>
+                                    <a href="#request" title="Estimate button" class="btn btn-service">Request Estimate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-7">
+                            <div class="service">
+                                <div class="service-image">
+                                    <img src="img/pink-flowers.jpg" alt="Image of pink flowers" />
+                                </div>
+                                <div class="service-description">
+                                    <h3>Garden Beds & Flowers</h3>
+                                    <a href="#request" title="Estimate button" class="btn btn-service">Request Estimate</a>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +72,7 @@
                                 </div>
                                 <div class="service-description">
                                     <h3>Trees & Shrubs</h3>
-                                    <a href="#request" title="Estimate button" class="btn btn-primary">Request Estimate</a>
+                                    <a href="#request" title="Estimate button" class="btn btn-service">Request Estimate</a>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +83,7 @@
                                 </div>
                                 <div class="service-description">
                                     <h3>Mulch Services</h3>
-                                    <a href="#request" title="Estimate button" class="btn btn-primary">Request Estimate</a>
+                                    <a href="#request" title="Estimate button" class="btn btn-service">Request Estimate</a>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +92,7 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <form method="post" action="registration.php" name="registration" class="service-form">
+                            <form method="post" action="registration.php" name="registration" class="submission-form">
 
                                 <div class="form-title">
                                     <h2 id="request">Free Services Estimate</h2>
@@ -103,16 +114,16 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">Email*</label>
+                                    <label for="email">Email</label>
                                     <div class="form-control">
-                                        <input type="text" name="email" id="email" placeholder="Email" max-length="30" autocomplete="off" />
+                                        <input type="text" name="email" id="email" placeholder="Email*" max-length="30" autocomplete="off" />
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="location">Location*</label>
+                                    <label for="location">Location</label>
                                     <div class="form-control">
-                                        <input type="text" name="location" id="location" placeholder="Your location" max-length="30" autocomplete="off" />
+                                        <input type="text" name="location" id="location" placeholder="Your location*" max-length="30" autocomplete="off" />
                                     </div>
                                 </div>
 
@@ -138,8 +149,8 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-buttons">
-                                        <a href="service-request-error.html" title="Error page button" class="btn btn-secondary">Form Error Page</a>
-                                        <a href="service-request-success.html" title="Success page button" class="btn btn-secondary">Form Success Page</a>
+                                        <a href="service-request-error.html" title="Error page button" class="btn btn-request">Form Error Page</a>
+                                        <a href="service-request-success.html" title="Success page button" class="btn btn-request">Form Success Page</a>
                                     </div>
                                 </div>
                             </form>
