@@ -574,17 +574,26 @@ td {
 /* End of styles for Grid System */
 
 /* Beginning of styles for Subcategory Preview component */
+.subcat-wrapper {
+    align-items: stretch;
+}
+
+.subcat-wrapper >div {
+    margin-bottom: 2rem;
+}
+
 .subcat {
     color: var(--light);
     background-color: var(--primary);
-    display: flex;
-    flex-flow: column wrap;
+    display: inline-flex;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
     padding: 2rem;
     margin-bottom: 2rem;
     border: 3px solid var(--dark);
+    height: 100%;
 }
 
 .subcat-img {
@@ -689,6 +698,7 @@ td {
     align-items:flex-start;
     align-content:flex-start;
     justify-content:flex-start;
+    margin-bottom: 1.5rem;
 }
 
 .product-container > img {
@@ -711,6 +721,7 @@ td {
 
 .product-img img {
     border: 3px solid var(--dark);
+    width: 100%;
 }
 
 @media screen and  (max-width: 992px){
@@ -849,8 +860,7 @@ footer img {
 }
 
 .aboutus-img img {
-    border: 3px solid var(--dark);
-    
+    border: 3px solid var(--dark); 
 }
 
 .aboutus-content {
@@ -1056,9 +1066,155 @@ footer img {
   flex: 0 0 70%;
   padding: 0px 20px 1rem 0px;
 }
-
 }
 
 /* End of styles for Services/Loyalty pages */
 
+/* Header Styles */
+nav {
+    display:flexbox;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content:  flex-start;
+    justify-content: space-between;
+
+}
+.navbar-brand {
+    display: block; 
+    overflow: hidden;
+    background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain transparent;
+    text-indent: -999999999px;
+    flex: 0 0 calc(100% - 3rem);
+    max-width: calc(100% - 3rem);
+}
+
+.navbar-toggler {
+    border: 0 none;
+    background-color: transparent;
+    color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+.navbar {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
+}
+
+.navbar.open {
+    display: block;
+}
+.navbar, 
+.navbar ul,
+.navbar li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a:link,
+.navbar a:active,
+.navbar a:hover,
+.navbar a:visited {
+    display: block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+
+}
+
+@media screen and (min-width:768px) {
+    .navbar { 
+        display: block;
+    }
+
+    .navbar-brand {
+        flex: 0 0 calc(100% - 3rem);
+    max-width: calc(100% - 3rem);
+    }
+
+    .navbar {
+        flex: 0 1 calc(100% - 220px);
+        max-width: 0 1 calc(100% - 220px); 
+    }
+    
+
+}
+/* End of Header Styles */
+
+/* Home Page Styles */
+.home-heroimage {
+background-image: url(..//img/471338755.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 89%;
+border: 3px solid var(--dark);
+display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-tagline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.home-emtpy-space {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.home-curbside {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between; 
+    border: 3px solid var(--dark);
+    border-radius: 4rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    margin: 1rem;
+    align-self: center;
+    
+}
+
+.home-curbside-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.home-display-image {
+    size: 1rem;
+}
+
+.home-main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+/* End of Home Page Styles */
 
