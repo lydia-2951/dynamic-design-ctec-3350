@@ -838,6 +838,67 @@ footer img {
 }
 /* End of styles for the error pages */
 
+/* About Us Styles */
+.aboutus-img {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.aboutus-img img {
+    border: 3px solid var(--dark);
+    
+}
+
+.aboutus-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom:2rem ;
+}
+
+.aboutus-content p {
+    padding: .5rem;
+}
+
+.aboutus-mission-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.aboutus-mission {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.aboutus-mission p {
+    color: var(--primary);
+    font-weight: 700;
+}
+/* End of About Us Styles */
+
+/* Contact Styles */
+.contact-social-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+/* End of Contact Style */
+
 /* Beginning of Submission Form Styles */
 
 /* Gave form a class of 'submission-form' */
@@ -955,67 +1016,6 @@ footer img {
 
 /* End of Submission Form styles */
 
-/* About Us Styles */
-.aboutus-img {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-content: flex-start;
-    padding-bottom: 2rem;
-}
-
-.aboutus-img img {
-    border: 3px solid var(--dark);
-    
-}
-
-.aboutus-content {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-content: flex-start;
-    padding-bottom:2rem ;
-}
-
-.aboutus-content p {
-    padding: .5rem;
-}
-
-.aboutus-mission-header {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
-
-.aboutus-mission {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.aboutus-mission p {
-    color: var(--primary);
-    font-weight: 700;
-}
-/* End of About Us Styles */
-
-/* Contact Styles */
-.contact-social-buttons {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
-
-/* End of Contact Style */
-
 /* Beginning of styles for Services/Loyalty pages */
 
 .service {
@@ -1060,3 +1060,5 @@ footer img {
 }
 
 /* End of styles for Services/Loyalty pages */
+
+
