@@ -1129,4 +1129,45 @@ display: flex;
     justify-content: center;
     align-content: center;
 }
+.home-emtpy-space {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.home-curbside {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between; 
+    border: 3px solid var(--dark);
+    border-radius: 4rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    margin: 1rem;
+    align-self: center;
+    
+}
+
+.home-curbside-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.home-display-image {
+    size: 1rem;
+}
+
+.home-main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+}
 /* End of Home Page Styles */
