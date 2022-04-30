@@ -849,120 +849,6 @@ footer img {
 }
 /* End of styles for the error pages */
 
-
-/* Beginning of Submission Form styles */
-
-/* Beginning of Form Styles */
-
-/* I gave the form a class of 'service-form' but can rename if we decide to use the same styles for all forms */
-.service-form {
-  max-width: 800px;
-  margin: 2rem auto;
-  border: 2px solid var(--primary);
-  padding: 2rem;
-}
-
-/* Styles for the input fields and text areas */
-.form-control > input,
-.form-control > textarea { 
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid;
-  border-radius: 3px;
-  font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  color: inherit; 
-}
-
-/* Make the 'required' fields have a red border (only for error page) */
-.form-control > input:required,
-.form-control > textarea:required {
-  border-color: red;
-  outline-color: red;
-}
-
-/* Remove red border from the 'required' fields when user starts typing (error page) */
-.form-control > input:valid, 
-.form-control > textarea:valid {
-  outline-color:inherit;
-  border-color: inherit;
-}
-
-/* Styles for the labels: add spacing and bolder text */
-.form-group > label {
-  display: block;
-  padding: 1rem 0 0;
-  font-weight: 600;
-}
-
-/* Styles for the 'submit' button */
-.form-group input[type=submit] { 
-  background-color: var(--primary);
-  border: 2px solid var(--dark);
-  color: var(--light);
-  margin: 1rem 0;
-  width: auto;
-}
-
-/* Styles for hovering over the 'submit' button */
-.form-group input[type=submit]:hover { 
-  background-color: #2B6E5B;
-  cursor: pointer;
-}
-
-/* In order to center-align the 'submit' button I added a class of 'submit' to the 'form-group' div in HTML. I selected that div here and made it a flexbox item so that I could then center it */
-.submit.form-group {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: center;
-}
-
-.error-message {
-  background-color: #FFF1F1;
-  border: 2px solid #E81A1A;
-  padding: 1rem;
-  color: #e81a1a;
-  font-weight: bold;
-}
-
-.btn.btn-secondary {
-  padding: 0 1rem 0 0;
-}
-
-/* Center the buttons that lead to the success and error pages */
-.form-buttons {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start ;
-  align-content: flex-start ;
-  justify-content: center;
-}
-
-.btn.btn-primary {
-  background-color: var(--primary);
-  color: var(--light);
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.btn.btn-primary:hover {
-  background-color: #2B6E5B;
-  cursor: pointer;
-}
-
-a:visited {
-  color: inherit;
-}
-
-/* End of Submission Form styles */
-
 /* About Us Styles */
 .aboutus-img {
     display: flex;
@@ -974,8 +860,7 @@ a:visited {
 }
 
 .aboutus-img img {
-    border: 3px solid var(--dark);
-    
+    border: 3px solid var(--dark); 
 }
 
 .aboutus-content {
@@ -1023,6 +908,167 @@ a:visited {
 }
 
 /* End of Contact Style */
+
+/* Beginning of Submission Form Styles */
+
+/* Gave form a class of 'submission-form' */
+.submission-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  border: 2px solid var(--primary);
+  padding: 2rem;
+}
+
+.submission-form  h1,h2,h3,p {
+  padding-bottom: 1rem;
+}
+
+.submission-form a:visited {
+  color: inherit;
+}
+
+/* Styles for the input fields and text areas */
+.form-control > input,
+.form-control > textarea { 
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+  font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit; 
+}
+
+/* Make the 'required' fields have a red border on the error pages */
+.form-control > input:required,
+.form-control > textarea:required {
+  border-color: red;
+  outline-color: red;
+}
+
+/* Remove red border from the 'required' fields when user starts typing */
+.form-control > input:valid, 
+.form-control > textarea:valid {
+  outline-color:inherit;
+  border-color: inherit;
+}
+
+/* Styles for the labels */
+.form-group > label {
+  display: block;
+  padding: 1rem 0 0;
+  font-weight: 600;
+}
+
+/* Styles for the 'submit' button */
+.form-group input[type=submit] { 
+  background-color: var(--primary);
+  border: 2px solid var(--dark);
+  color: var(--light);
+  margin: 1rem 0;
+  width: auto;
+}
+
+/* Styles for hovering over the 'submit' button */
+.form-group input[type=submit]:hover { 
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+
+/* Center-align the 'submit' button */
+.submit.form-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.error-message {
+  background-color: #FFF1F1;
+  border: 2px solid #e81a1a;
+  padding: 1rem;
+  color: #e81a1a;
+  font-weight: bold;
+}
+
+/* Center the buttons that lead to the success and error pages */
+.form-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start ;
+  align-content: flex-start ;
+  justify-content: center;
+}
+
+.btn.btn-service {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.btn.btn-service:hover {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+
+.btn.btn-request {
+  padding: 0 1rem 0 0;
+}
+
+/* End of Submission Form styles */
+
+/* Beginning of styles for Services/Loyalty pages */
+
+.service {
+  padding-bottom: 1rem;
+}
+
+.service .service-description h3 {
+  padding: 1rem 0;
+}
+
+.service-text {
+  border-bottom: 2px solid var(--primary);
+}
+
+.service-text h1 {
+  padding-bottom: 1rem;
+}
+
+.service-text p {
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+
+.service {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.service .service-description {
+  flex: 1 0 100%;
+}
+
+.service .service-image {
+  flex: 0 0 70%;
+  padding: 0px 20px 1rem 0px;
+}
+}
+
+/* End of styles for Services/Loyalty pages */
 
 /* Header Styles */
 nav {
@@ -1171,3 +1217,4 @@ display: flex;
     align-content: space-around;
 }
 /* End of Home Page Styles */
+
