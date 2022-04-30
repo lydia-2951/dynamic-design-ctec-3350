@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name= "keywords" content= "">
-        <meta name= "description" content= "This is the websites' loyalty program success page that will be displayed to users after successfully joining to become a MG Rewards member">
-        <meta name= "author" content= "Dynamic Design"> 
+        <meta name= "description" content= "This is the websites' loyalty program error page that will be displayed to notify users that there was an error while signing up for MG Rewards">
+        <meta name= "author" content= "Dynamic Design">
 
-        <title>Sign-Up Success | Dynamic Design</title>
+        <title>Sign-Up Error | Dynamic Design</title>
 
         <link rel= "stylesheet" href="css/style.css">
-
 
 
     </head>
@@ -23,23 +22,70 @@
         </header>
 
         <main>
+
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="service-text">
-                            <h1>Thanks For Signing Up!</h1>
-                            <p>You are now a MG Rewards member!</p>
-                            <p>Please check your email for the confirmation we've just sent.</p>
-                            <a href="#" title="Home button" class="btn btn-service">Back Home</a>
-                            <a href="#" title="Products button" class="btn btn-service">View Products</a>
+                    <div class="col-sm-12">
+                        <form method="post" action="registration.php" name="registration" class="submission-form">
+
+                            <div class="form-title">
+                                <h1>MG Rewards Loyalty Program</h1>
+                                <h2>Enjoy fresh deals and lively perks!</h2>
+                                <p>It's free to join, and takes almost no time at all.</p> 
+                                <p>Receive goodies on your birthday, exclusive offers, weekly newsletters, coupons and more.</p>
+                                <p>Please fill out your information below to join.</p> 
+                            </div>
+
+                            <div class="error-message">
+                                One or more fields has an error, please check and try again.
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="full-name">Name</label>
+                                <div class="form-control">
+                                    <input type="text" name="full-name" id="full-name" placeholder="Full name" max-length="30" autocomplete="off" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Birthdate</label>
+                                <div class="form-control">
+                                    <input type="text" name="phone-number" id="phone-number" placeholder="MM/DD/YY" max-length="30" autocomplete="off" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone-number">Phone</label>
+                                <div class="form-control">
+                                    <input type="text" name="email" id="email" placeholder="Phone number" max-length="30" autocomplete="off" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="form-control">
+                                    <input required type="text" name="email" id="email" placeholder="Email address*" max-length="30" autocomplete="off" />
+                                </div>
+                            </div>
+
+                            <div class="submit form-group">
+                                <div class="form-control">
+                                    <input type="submit" name="submit" id="submit" value="Submit" />
+                                </div>
+                            </div>
+                            <div class="form-buttons">
+                                <a href="loyalty-program-error.html" title="Error page button" class="btn btn-request">Form Error Page</a>
+                                <a href="loyalty-program-success.html" title="Error page button" class="btn btn-request">Form Success Page</a>
+                            </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </main>
 
         <footer>
-            <!-- Footer here -->
+            <!-- Footer goes here -->
         </footer>
     </body>
 </html>
