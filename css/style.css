@@ -1165,7 +1165,7 @@ display: flex;
 .home-main {
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     align-content: space-around;
 }
@@ -1175,20 +1175,32 @@ display: flex;
     color: var(--light);
     background-color: var(--primary);
     margin: 1rem;
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    align-content: flex-start; 
-    height: 25rem;
+    align-content: center; 
+    min-height: 15rem; 
 }
 .home-display-content {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-content: flex-end;
+}
+
+.home-display-picture {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-display-picture img {
+    border: 3px solid var(--dark)
 }
     
 /* End of Home Page Styles */
