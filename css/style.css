@@ -864,7 +864,8 @@ footer img {
 
 /* Styles for the input fields and text areas */
 .form-control > input,
-.form-control > textarea { 
+.form-control > textarea, 
+.form-control > select{ 
   display: block;
   width: 100%;
   padding: 0.5rem;
@@ -968,6 +969,16 @@ background-color: var(--secondary-hover);
 color: var(--dark);
 }  
 
+.btn-social {
+    color: var(--secondary);
+}
+
+.btn-social:hover {
+    color: var(--secondary-hover);
+}
+.btn-social:visited {
+    color: var(--secondary);
+}
 a:visited {
   color: inherit;
 }
@@ -1025,19 +1036,90 @@ a:visited {
 /* End of About Us Styles */
 
 /* Contact Styles */
-.contact-social-buttons {
-    display: flex;
+.contact-socialhours {
+   background-color: var(--primary);
+   color: var(--light);
+   display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
     align-content: flex-start;
+    min-height: 15rem;
+    padding: 1rem;
+    
 }
 
+.contact-contacts {
+    background-color: var(--primary);
+    color: var(--light);
+    display: flex;
+     flex-flow: row wrap;
+     align-items: flex-start;
+     justify-content: flex-start;
+     align-content: flex-start;
+     min-height: 15rem;
+     padding: 1rem;
+}
+.contact-socialbuttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    
+}
+
+.contact-socialbutton {
+margin: .05rem;
+}
+
+.contact-hours-hours {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    
+}
+
+.contact-hours {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.contact-hours h3 {
+align-self: flex-end;
+}
+
+@media screen and (max-width:768px) {
+    .contact-order-2 {
+    order: 2 ;
+    }
+    .contact-order-1 {
+        order: 1;
+
+    }
+
+    .contact-order-3 {
+order: 3;
+    }
+
+    .contact-contacts, .contact-hours .contact-hours-hours .contact-socialhours .contact-socialbuttons .contact-socialbutton .contact{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
 /* End of Contact Style */
 
 /* Header Styles */
 nav {
-    display:flexbox;
+    display: flexbox;
     flex-flow: row wrap;
     align-items: flex-start;
     align-content:  flex-start;
