@@ -1253,6 +1253,14 @@ a:visited {
     }
 }
 
+.service .service-image {
+  flex: 0 0 70%;
+  padding: 0px 20px 1rem 0px;
+}
+}
+
+/* End of styles for Services/Loyalty pages */
+
 /* Contact Styles */
 .contact-socialhours {
     background-color: var(--primary);
