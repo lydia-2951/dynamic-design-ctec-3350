@@ -626,17 +626,12 @@ td {
     margin-bottom: 0.5rem;
 }
 
-.subcat-description {
-
-}
-
 .subcat-button {
-
+    color: var(--text);
 }
 
 .subcat-button a {
     background-color: var(--secondary);
-    color: var(--text);
     border: 3px solid var(--dark);
     border-radius: 0.5rem;
     padding: 0.5em 0.75em;
@@ -674,9 +669,12 @@ td {
     padding-bottom: 10px;
 }
 
-.service-banner-content a {
-    background-color: var(--secondary);
+.service-button {
     color: var(--text);
+}
+
+.service-button a {
+    background-color: var(--secondary);
     padding: 10px 15px;
     text-decoration: none;
     display: inline-block;
