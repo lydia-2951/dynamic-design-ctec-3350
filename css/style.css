@@ -1,7 +1,7 @@
 /* Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design
-    Date: 04.20.22
-    Last update: 04.20.22
+    Date: 05.01.22
+    Last update: 05.01.22
 */
 
 /* Import text font and Font Awesome icons */
@@ -33,7 +33,6 @@
     --light: #e5e5e5;
     --dark: #483c32;
     --text: var(--dark);
-    /* --text-hover: #120f0c; */
 }
 
 /* General styles */
@@ -649,7 +648,6 @@ td {
 /* End of styles for Subcategory Preview component */
 
 /* Beginning of styles for Service Banner component */
-
 .service-container {
     padding: 4rem 2rem;
     background-color: var(--primary);
@@ -783,7 +781,7 @@ footer img {
 }
 
 .footer-socialbutton {
-    margin: .3rem;
+    margin: 0.3rem;
     font-size: 2rem;
 }
 .footer-text {
@@ -811,53 +809,205 @@ footer img {
 }
 
 .footer-directions a:hover {
-    background-co
-    lor: var(--secondary-hover);
+    background-color: var(--secondary-hover);
 }
 
 .footer-directions a:visited {
     color: var(--dark);
 }
+
 .footer-directions a:visited:hover {
     color: var(--dark);
 }
 /* End of styles for Footer component */
 
-/* Beginning of styles for the error pages */
-.error-img {
-   max-width: 70%;
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: flex-start;
-   align-content: flex-start;
-   align-items: flex-start;
-   flex: 0 0 100%;
-   -webkit-flex: 0 0 100%;
+/* Header Styles */
+nav {
+    display: flexbox;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content:  flex-start;
+    justify-content: space-between;
+
 }
 
-.error-img img {
-    border: 3px solid var(--dark);
-    max-width: 40%;
-    object-fit: cover;
-    object-position: center;
+.navbar-brand {
+    display: block; 
+    overflow: hidden;
+    background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain  transparent;
+    text-indent: -999999999px;
+    flex: 0 0 calc(100% - 3rem);
+    max-width: calc(100%);
 }
 
-.page-title.error-title h1{
-    margin: 1rem 0;
+.navbar-toggler {
+    border: 0 none;
+    background-color: transparent;
+    color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
 }
 
-.error-text {
-    margin: 3rem 0 2rem;
+.navbar-toggler:active {
+    background-color: var(--primary);
+    color: var(--light);
 }
 
-.error-links a {
-    font-weight: bold;
+.navbar {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
 }
 
-.error-links ul {
+.navbar.open {
+    display: block;
+}
+
+.navbar, 
+.navbar ul,
+.navbar li {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-/* End of styles for the error pages */
+
+.navbar a:link,
+.navbar a:active,
+.navbar a:hover,
+.navbar a:visited {
+    display: block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+
+}
+
+@media screen and (min-width:1080px) {
+    .navbar {
+        display: flex;
+    }
+
+    .navbar li {
+        display: inline-block;  
+    }
+
+    nav {
+        border-bottom: 3px solid var(--primary);
+        margin-bottom: 1rem ;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+/* End of Header Styles */
+
+/* Home Page Styles */
+.home-heroimage {
+    background-image: url(..//img/471338755.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89%;
+    border: 3px solid var(--dark);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-tagline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-curbside-space {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-curbside {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center; 
+    border: 3px solid var(--dark);
+    border-radius: 3rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    margin: 1rem;
+    width: 80%;
+    color: var(--light);
+}
+
+.home-curbside-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.home-main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.home-display {
+    border: 3px solid var(--dark);
+    color: var(--light);
+    background-color: var(--primary);
+    margin: 1rem;
+    padding: .5rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center; 
+    min-height: 15rem; 
+}
+
+.home-display-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+
+.home-display-picture {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-display-picture img {
+    border: 3px solid var(--dark);
+}   
+/* End of Home Page Styles */
 
 /* About Us Styles */
 .aboutus-img {
@@ -916,7 +1066,6 @@ footer img {
     justify-content: flex-start;
     align-content: flex-start;
 }
-
 /* End of Contact Style */
 
 /* Beginning of Submission Form Styles */
@@ -1039,7 +1188,7 @@ footer img {
     font-weight: bold;
     margin-top: 1rem;
     border: 3px solid var(--dark);
-  }
+}
 
 .btn.btn-secondary:hover {
 background-color: var(--secondary-hover);
@@ -1053,79 +1202,80 @@ color: var(--dark);
 .btn-social:hover {
     color: var(--secondary-hover);
 }
+
 .btn-social:visited {
     color: var(--secondary);
     
 }
+
 .btn-social:visited:hover {
     color: var(--secondary-hover);
     
 }
-a:visited {
-  color: inherit;
 
-.btn.btn-request {
-  padding: 0 1rem 0 0;
+a:visited {
+    color: inherit;
 }
 
+.btn.btn-request {
+    padding: 0 1rem 0 0;
+}
 /* End of Submission Form styles */
 
 /* Beginning of styles for Services/Loyalty pages */
-
 .service {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .service .service-description h3 {
-  padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 .service-text h1 {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .service-text p {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 992px) {
-
 .service {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-}
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    }
 
 .service .service-description {
-  flex: 1 0 100%;
+    flex: 1 0 100%;
+    }
 }
 
 /* Contact Styles */
 .contact-socialhours {
-   background-color: var(--primary);
-   color: var(--light);
-   display: flex;
+    background-color: var(--primary);
+    color: var(--light);
+    display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: flex-end;
     align-content: flex-start;
     min-height: 15rem;
-    padding: 1rem;
-    
+    padding: 1rem; 
 }
 
 .contact-contacts {
     background-color: var(--primary);
     color: var(--light);
     display: flex;
-     flex-flow: row wrap;
-     align-items: flex-start;
-     justify-content: flex-start;
-     align-content: flex-start;
-     min-height: 15rem;
-     padding: 1rem;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    min-height: 15rem;
+    padding: 1rem;
 }
 
 .contact-socialbuttons {
@@ -1137,7 +1287,7 @@ a:visited {
 }
 
 .contact-socialbutton {
-margin: .05rem;
+    margin: 0.05rem;
 }
 
 .contact-hours {
@@ -1149,19 +1299,20 @@ margin: .05rem;
 }
 
 .contact-hours h3 {
-align-self: flex-end;
+    align-self: flex-end;
 }
 
 @media screen and (max-width:768px) {
     .contact-order-2 {
-    order: 2 ;
+        order: 2 ;
     }
+
     .contact-order-1 {
         order: 1;
     }
 
     .contact-order-3 {
-    order: 3;
+        order: 3;
     }
 
     .contact-contacts, .contact-hours .contact-hours-hours .contact-socialhours .contact-socialbuttons .contact-socialbutton .contact {
@@ -1179,198 +1330,43 @@ align-self: flex-end;
 /* End of Contact Style */
 
 .service .service-image {
-  flex: 0 0 70%;
-  padding: 0px 20px 1rem 0px;
+    flex: 0 0 70%;
+    padding: 0px 20px 1rem 0px;
 }
-}
-
 /* End of styles for Services/Loyalty pages */
 
-/* Header Styles */
-nav {
-    display: flexbox;
+/* Beginning of styles for the error pages */
+.error-img {
+    max-width: 70%;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
     align-items: flex-start;
-    align-content:  flex-start;
-    justify-content: space-between;
-
-}
-.navbar-brand {
-    display: block; 
-    overflow: hidden;
-    background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain  transparent;
-    text-indent: -999999999px;
-    flex: 0 0 calc(100% - 3rem);
-    max-width: calc(100%);
-}
-
-.navbar-toggler {
-    border: 0 none;
-    background-color: transparent;
-    color: var(--primary);
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-    line-height: 1rem;
-    cursor: pointer;
-}
-
-.navbar-toggler:active {
-    background-color: var(--primary);
-    color: var(--light);
-}
-
-.navbar {
     flex: 0 0 100%;
-    max-width: 100%;
-    display: none;
-}
-
-.navbar.open {
-    display: block;
-}
-
-.navbar, 
-.navbar ul,
-.navbar li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar a:link,
-.navbar a:active,
-.navbar a:hover,
-.navbar a:visited {
-    display: block;
-    overflow: hidden;
-    padding: 0.5rem 0.75rem;
-    text-decoration: none;
-
-}
-
-@media screen and (min-width:1080px) {
-.navbar {
-    display: flex;
-}
-    .navbar li {
-    display: inline-block; 
-   
-}
-nav {
-    border-bottom: 3px solid var(--primary);
-    margin-bottom: 1rem ;
-}
-.navbar-toggler {
-    display: none;
-}
-
-
-}
-/* End of Header Styles */
-
-/* Home Page Styles */
-.home-heroimage {
-background-image: url(..//img/471338755.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 89%;
-border: 3px solid var(--dark);
-display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.home-logo {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.home-tagline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.home-curbside-space {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.home-curbside {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center; 
-    border: 3px solid var(--dark);
-    border-radius: 3rem;
-    padding: 1rem;
-    background-color: var(--primary);
-    margin: 1rem;
-    width: 80%;
-    color: var(--light);
-    
-}
-
-.home-curbside-text {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-content: space-around;
-}
-
-.home-main {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: center;
-}
-
-.home-display {
-    border: 3px solid var(--dark);
-    color: var(--light);
-    background-color: var(--primary);
-    margin: 1rem;
-    padding: .5rem;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: flex-start;
-    align-content: center; 
-    min-height: 15rem; 
-}
-.home-display-content {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: flex-start;
-    align-content: flex-end;
-}
-
-.home-display-picture {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.home-display-picture img {
-    border: 3px solid var(--dark);
-    
-}
-    
-/* End of Home Page Styles */
+    -webkit-flex: 0 0 100%;
+ }
+ 
+ .error-img img {
+     border: 3px solid var(--dark);
+     max-width: 40%;
+     object-fit: cover;
+     object-position: center;
+ }
+ 
+ .page-title.error-title h1{
+     margin: 1rem 0;
+ }
+ 
+ .error-text {
+     margin: 3rem 0 2rem;
+ }
+ 
+ .error-links a {
+     font-weight: bold;
+ }
+ 
+ .error-links ul {
+     list-style-type: none;
+ }
+ /* End of styles for the error pages */ 
