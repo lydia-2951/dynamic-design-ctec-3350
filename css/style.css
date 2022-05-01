@@ -760,9 +760,9 @@ td {
 .footer-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     margin-left: -1rem;
     margin-right: -1rem;
     margin-top: 1rem;
@@ -784,6 +784,10 @@ footer img {
     align-content: center;
 }
 
+.footer-socialbutton {
+    margin: .3rem;
+    font-size: 2rem;
+}
 .footer-text {
     display: flex;
     flex-flow: row wrap;
@@ -803,13 +807,21 @@ footer img {
     padding: 1rem;
     margin: 1rem;
     border-radius: 8px;
-    color: var(--text);
+    color: var(--dark);
     text-decoration: none;
     font-weight: bold;
 }
 
 .footer-directions a:hover {
-    background-color: var(--secondary-hover);
+    background-co
+    lor: var(--secondary-hover);
+}
+
+.footer-directions a:visited {
+    color: var(--dark);
+}
+.footer-directions a:visited:hover {
+    color: var(--dark);
 }
 /* End of styles for Footer component */
 
@@ -978,6 +990,11 @@ color: var(--dark);
 }
 .btn-social:visited {
     color: var(--secondary);
+    
+}
+.btn-social:visited:hover {
+    color: var(--secondary-hover);
+    
 }
 a:visited {
   color: inherit;
@@ -1073,14 +1090,6 @@ a:visited {
 margin: .05rem;
 }
 
-.contact-hours-hours {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: flex-end;
-    align-content: flex-end;
-    
-}
 
 .contact-hours {
     display: flex;
@@ -1133,10 +1142,10 @@ nav {
 .navbar-brand {
     display: block; 
     overflow: hidden;
-    background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain transparent;
+    background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain  transparent;
     text-indent: -999999999px;
     flex: 0 0 calc(100% - 3rem);
-    max-width: calc(100% - 3rem);
+    max-width: calc(100%);
 }
 
 .navbar-toggler {
@@ -1150,6 +1159,11 @@ nav {
     cursor: pointer;
 }
 
+.navbar-toggler:active {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
 .navbar {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1159,6 +1173,7 @@ nav {
 .navbar.open {
     display: block;
 }
+
 .navbar, 
 .navbar ul,
 .navbar li {
@@ -1178,21 +1193,22 @@ nav {
 
 }
 
-@media screen and (min-width:768px) {
-    .navbar { 
-        display: block;
-    }
+@media screen and (min-width:1080px) {
+.navbar {
+    display: flex;
+}
+    .navbar li {
+    display: inline-block; 
+   
+}
+nav {
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 1rem ;
+}
+.navbar-toggler {
+    display: none;
+}
 
-    .navbar-brand {
-        flex: 0 0 calc(100% - 3rem);
-    max-width: calc(100% - 3rem);
-    }
-
-    .navbar {
-        flex: 0 1 calc(100% - 220px);
-        max-width: 0 1 calc(100% - 220px); 
-    }
-    
 
 }
 /* End of Header Styles */
