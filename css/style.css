@@ -1102,6 +1102,14 @@ a:visited {
   flex: 1 0 100%;
 }
 
+.service .service-image {
+  flex: 0 0 70%;
+  padding: 0px 20px 1rem 0px;
+}
+}
+
+/* End of styles for Services/Loyalty pages */
+
 /* Contact Styles */
 .contact-socialhours {
    background-color: var(--primary);
@@ -1178,13 +1186,6 @@ align-self: flex-end;
 }
 /* End of Contact Style */
 
-.service .service-image {
-  flex: 0 0 70%;
-  padding: 0px 20px 1rem 0px;
-}
-}
-
-/* End of styles for Services/Loyalty pages */
 
 /* Header Styles */
 nav {
