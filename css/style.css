@@ -1115,6 +1115,10 @@ order: 3;
         align-content: center;
     }
 }
+
+.contact-form-success {
+    border: 3px solid var(--dark);
+}
 /* End of Contact Style */
 
 /* Header Styles */
