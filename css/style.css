@@ -1240,23 +1240,22 @@ a:visited {
 }
 
 @media screen and (min-width: 992px) {
-.service {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    .service {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
     }
 
-.service .service-description {
-    flex: 1 0 100%;
+    .service .service-description {
+        flex: 1 0 100%;
     }
-}
 
-.service .service-image {
-  flex: 0 0 70%;
-  padding: 0px 20px 1rem 0px;
-}
+    .service .service-image {
+        flex: 0 0 70%;
+        padding: 0px 20px 1rem 0px;
+    }
 }
 
 /* End of styles for Services/Loyalty pages */
