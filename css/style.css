@@ -1,7 +1,7 @@
 /* Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design
-    Date: 05.01.22
-    Last update: 05.01.22
+    Date: 05.03.22
+    Last update: 05.03.22
 */
 
 /* Import text font and Font Awesome icons */
@@ -851,7 +851,8 @@ nav {
     cursor: pointer;
 }
 
-.navbar-toggler:active {
+.navbar-toggler:active,
+.navbar-toggler.toggled {
     background-color: var(--primary);
     color: var(--light);
 }
@@ -864,6 +865,8 @@ nav {
 
 .navbar.open {
     display: block;
+    background-color: var(--primary);
+    color: var(--light);
 }
 
 .navbar, 
@@ -882,16 +885,27 @@ nav {
     overflow: hidden;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
-
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width:992px) {
     .navbar {
         display: flex;
     }
 
     .navbar li {
         display: inline-block;  
+    }
+
+    .navbar a:link,
+    .navbar a:active,
+    .navbar a:hover,
+    .navbar a:visited {
+        color: var(--primary);
+        font-weight: bold;
+    }
+
+    .navbar a:hover {
+        color: var(--primary-hover);
     }
 
     nav {

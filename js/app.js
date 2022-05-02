@@ -10,6 +10,7 @@ $(function(){
 $(".navbar-toggler").on("click", function(){ 
     let toggler = $(this).attr("data-target");
    $(toggler).toggleClass("open");
+   $(this).toggleClass("toggled");
 })
 
 
