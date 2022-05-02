@@ -1,7 +1,7 @@
 /* Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design
-    Date: 05.01.22
-    Last update: 05.01.22
+    Date: 05.03.22
+    Last update: 05.03.22
 */
 
 /* Import text font and Font Awesome icons */
@@ -254,6 +254,15 @@ td {
 .col-12 {
     flex: 0 0 var(--col-12);
     max-width: var(--col-12);
+}
+
+/* Used to center the curbside pickup banner on the Home page */
+.col-md-12.center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 /* Small Screens = sm */
@@ -851,7 +860,8 @@ nav {
     cursor: pointer;
 }
 
-.navbar-toggler:active {
+.navbar-toggler:active,
+.navbar-toggler.toggled {
     background-color: var(--primary);
     color: var(--light);
 }
@@ -864,6 +874,8 @@ nav {
 
 .navbar.open {
     display: block;
+    background-color: var(--primary);
+    color: var(--light);
 }
 
 .navbar, 
@@ -882,16 +894,27 @@ nav {
     overflow: hidden;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
-
 }
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width:992px) {
     .navbar {
         display: flex;
     }
 
     .navbar li {
         display: inline-block;  
+    }
+
+    .navbar a:link,
+    .navbar a:active,
+    .navbar a:hover,
+    .navbar a:visited {
+        color: var(--primary);
+        font-weight: bold;
+    }
+
+    .navbar a:hover {
+        color: var(--primary-hover);
     }
 
     nav {
@@ -935,13 +958,13 @@ nav {
     align-content: center;
 }
 
-.home-curbside-space {
+/* .home-curbside-space {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     align-content: center;
-}
+} */
 
 .home-curbside {
     display: flex;
@@ -974,18 +997,27 @@ nav {
     align-content: center;
 }
 
+.row.home-display-wrapper {
+    align-items: stretch;
+}
+
+.row.home-display-wrapper >div {
+    margin-bottom: 3.5rem;
+}
+
 .home-display {
     border: 3px solid var(--dark);
     color: var(--light);
     background-color: var(--primary);
     margin: 1rem;
     padding: .5rem;
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
     align-content: center; 
     min-height: 15rem; 
+    height: 100%;
 }
 
 .home-display-content {
@@ -1002,11 +1034,48 @@ nav {
     align-items: center;
     justify-content: center;
     align-content: center;
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    width: 100%;
+    padding-top: 60%;
+    margin-bottom: 1rem;
 }
 
 .home-display-picture img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid var(--light);
+}
+
+.how-sweet-text {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.home-display-button .btn {
+    background-color: var(--secondary);
+    color: var(--text);
     border: 3px solid var(--dark);
-}   
+    border-radius: 0.5rem;
+    padding: 0.5em 0.75em;
+    font-size: 1rem; 
+    font-weight: bold;
+    text-decoration:none;
+    display: block;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.home-display-button .btn:hover {
+    background-color: var(--secondary-hover);
+}
 /* End of Home Page Styles */
 
 /* About Us Styles */
@@ -1240,23 +1309,22 @@ a:visited {
 }
 
 @media screen and (min-width: 992px) {
-.service {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    .service {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
     }
 
-.service .service-description {
-    flex: 1 0 100%;
+    .service .service-description {
+        flex: 1 0 100%;
     }
-}
 
-.service .service-image {
-  flex: 0 0 70%;
-  padding: 0px 20px 1rem 0px;
-}
+    .service .service-image {
+        flex: 0 0 70%;
+        padding: 0px 20px 1rem 0px;
+    }
 }
 
 /* End of styles for Services/Loyalty pages */
