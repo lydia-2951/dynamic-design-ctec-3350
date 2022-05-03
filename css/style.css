@@ -1149,6 +1149,14 @@ nav {
 /* End of About Us Styles */
 
 /* Contact Styles */
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-socialhours h2 {
+    padding-bottom: 0;
+}
+
 .contact-social-buttons {
     display: flex;
     flex-flow: row wrap;
