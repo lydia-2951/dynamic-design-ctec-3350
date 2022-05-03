@@ -729,7 +729,7 @@ td {
     width: 100%;
 }
 
-@media screen and  (max-width: 992px){
+@media screen and (max-width: 992px){
     .product-container {
        display:flex;
        flex-flow:row wrap;
@@ -796,10 +796,11 @@ footer img {
 .footer-text {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     align-content: center;
 }
+
 
 .footer-directions a {
     display: flex;
@@ -840,6 +841,7 @@ footer img {
 
 .footer-error-links a {
     padding-right: 2rem;
+    color: var(--secondary);
 }
 
 .footer-error-links a:hover {
