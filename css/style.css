@@ -1327,6 +1327,11 @@ a:visited {
 
 .btn.btn-request {
     padding: 0 1rem 0 0;
+    font-weight: bold;
+}
+
+.btn.btn-request:hover {
+    color: var(--primary);
 }
 /* End of Submission Form styles */
 
