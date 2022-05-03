@@ -828,6 +828,23 @@ footer img {
 .footer-directions a:visited:hover {
     color: var(--dark);
 }
+
+.footer-error-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    color: var(--secondary);
+}
+
+.footer-error-links a {
+    padding-right: 2rem;
+}
+
+.footer-error-links a:hover {
+    color: var(--secondary-hover);
+}
 /* End of styles for Footer component */
 
 /* Header Styles */
