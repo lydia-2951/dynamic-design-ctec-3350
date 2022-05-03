@@ -1,7 +1,7 @@
 /* Project: Mansfield Gardens Website Redesign
     Author: Dynamic Design
-    Date: 04.20.22
-    Last update: 04.20.22
+    Date: 05.03.22
+    Last update: 05.03.22
 */
 
 /* Import text font and Font Awesome icons */
@@ -33,7 +33,6 @@
     --light: #e5e5e5;
     --dark: #483c32;
     --text: var(--dark);
-    /* --text-hover: #120f0c; */
 }
 
 /* General styles */
@@ -159,7 +158,7 @@ td {
 /* Beginning of styles for Grid System */
 .container-fluid {
     width: 100%;
-    padding: 3rem 1rem 0;
+    padding: 0 1rem 0;
 }
 
 @media screen and (min-width: 576px) {
@@ -255,6 +254,15 @@ td {
 .col-12 {
     flex: 0 0 var(--col-12);
     max-width: var(--col-12);
+}
+
+/* Used to center the curbside pickup banner on the Home page */
+.col-md-12.center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 /* Small Screens = sm */
@@ -574,17 +582,26 @@ td {
 /* End of styles for Grid System */
 
 /* Beginning of styles for Subcategory Preview component */
+.subcat-wrapper {
+    align-items: stretch;
+}
+
+.subcat-wrapper >div {
+    margin-bottom: 2rem;
+}
+
 .subcat {
     color: var(--light);
     background-color: var(--primary);
-    display: flex;
-    flex-flow: column wrap;
+    display: inline-flex;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
     padding: 2rem;
     margin-bottom: 2rem;
     border: 3px solid var(--dark);
+    height: 100%;
 }
 
 .subcat-img {
@@ -617,17 +634,12 @@ td {
     margin-bottom: 0.5rem;
 }
 
-.subcat-description {
-
-}
-
 .subcat-button {
-
+    color: var(--text);
 }
 
 .subcat-button a {
     background-color: var(--secondary);
-    color: var(--text);
     border: 3px solid var(--dark);
     border-radius: 0.5rem;
     padding: 0.5em 0.75em;
@@ -645,7 +657,6 @@ td {
 /* End of styles for Subcategory Preview component */
 
 /* Beginning of styles for Service Banner component */
-
 .service-container {
     padding: 4rem 2rem;
     background-color: var(--primary);
@@ -665,9 +676,12 @@ td {
     padding-bottom: 10px;
 }
 
-.service-banner-content a {
-    background-color: var(--secondary);
+.service-button {
     color: var(--text);
+}
+
+.service-button a {
+    background-color: var(--secondary);
     padding: 10px 15px;
     text-decoration: none;
     display: inline-block;
@@ -678,17 +692,18 @@ td {
 }
 
 .service-banner-content a:hover {
-        background-color: var(--secondary-hover);
-      }
+    background-color: var(--secondary-hover);
+}
 /* End of styles for Service Banner component */
 
 /* Beginning of styles for Product Card component */
 .product-container {
-    display:flex;
-    flex-flow:row wrap;
-    align-items:flex-start;
-    align-content:flex-start;
-    justify-content:flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
 }
 
 .product-container > img {
@@ -705,21 +720,23 @@ td {
 
 .product-img {
     flex: 0 0 90%;
+    -webkit-flex: 0 0 90%;
     max-width: 90%;
     width: 100%;
 }
 
 .product-img img {
     border: 3px solid var(--dark);
+    width: 100%;
 }
 
-@media screen and  (max-width: 992px){
+@media screen and (max-width: 992px){
     .product-container {
-       display:flex;
-       flex-flow:row wrap;
-       align-items:flex-start;
-       align-content:flex-start;
-       justify-content:space-around;
+       display: flex;
+       flex-flow: row wrap;
+       align-items: flex-start;
+       align-content: flex-start;
+       justify-content: space-around;
     }
 
     .product-container {
@@ -728,11 +745,13 @@ td {
 
     .product-container > img {
         flex: 0 0 40%;
+        -webkit-flex: 0 0 40%;
         max-width: 40%;
     }
     
     .product-img {
         flex: 0 0 40%;
+        -webkit-flex: 0 0 40%;
         max-width: 40%;
         width: 100%;
         padding-right: 5%;
@@ -740,6 +759,7 @@ td {
 
     .product-description {
         flex: 0 0 calc(60% - 1rem);
+        -webkit-flex: 0 0 calc(60% - 1rem);
         max-width: calc(60% - 1rem);
     }
 } 
@@ -749,9 +769,9 @@ td {
 .footer-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     margin-left: -1rem;
     margin-right: -1rem;
     margin-top: 1rem;
@@ -762,7 +782,7 @@ td {
 
 footer img {
     max-width: 3rem;
-    padding: .15rem;
+    padding: 0.15rem;
 } 
 
 .footer-socialbuttons {
@@ -773,13 +793,18 @@ footer img {
     align-content: center;
 }
 
+.footer-socialbutton {
+    margin: 0.3rem;
+    font-size: 2rem;
+}
 .footer-text {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     align-content: center;
 }
+
 
 .footer-directions a {
     display: flex;
@@ -792,7 +817,7 @@ footer img {
     padding: 1rem;
     margin: 1rem;
     border-radius: 8px;
-    color: var(--text);
+    color: var(--dark);
     text-decoration: none;
     font-weight: bold;
 }
@@ -800,137 +825,279 @@ footer img {
 .footer-directions a:hover {
     background-color: var(--secondary-hover);
 }
+
+.footer-directions a:visited {
+    color: var(--dark);
+}
+
+.footer-directions a:visited:hover {
+    color: var(--dark);
+}
+
+.footer-error-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    color: var(--secondary);
+}
+
+.footer-error-links a {
+    padding-right: 2rem;
+    color: var(--secondary);
+}
+
+.footer-error-links a:hover {
+    color: var(--secondary-hover);
+}
 /* End of styles for Footer component */
 
-/* Beginning of styles for the error pages */
-.error-img {
-   max-width: 70%;
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: flex-start;
-   align-content: flex-start;
-   align-items: flex-start;
-   flex: 0 0 100%;
-   -webkit-flex: 0 0 100%;
+/* Header Styles */
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content:  flex-start;
+    justify-content: space-between;
+
 }
 
-.error-img img {
+.navbar-brand {
+    display: block; 
+    overflow: hidden;
+    background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain  transparent;
+    text-indent: -999999999px;
+    flex: 0 0 calc(100% - 3rem);
+    -webkit-flex: 0 0 calc(100% - 3rem);
+    max-width: calc(100%);
+}
+
+.navbar-toggler {
+    border: 0 none;
+    background-color: transparent;
+    color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+.navbar-toggler:active,
+.navbar-toggler.toggled {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.navbar {
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
+}
+
+.navbar.open {
+    display: block;
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.navbar, 
+.navbar ul,
+.navbar li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a:link,
+.navbar a:active,
+.navbar a:hover,
+.navbar a:visited {
+    display: block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width:992px) {
+    .navbar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        display: inline-block;  
+    }
+
+    .navbar a:link,
+    .navbar a:active,
+    .navbar a:hover,
+    .navbar a:visited {
+        color: var(--primary);
+        font-weight: bold;
+    }
+
+    .navbar a:hover {
+        color: var(--primary-hover);
+    }
+
+    nav {
+        border-bottom: 3px solid var(--primary);
+        margin-bottom: 1rem ;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+/* End of Header Styles */
+
+/* Home Page Styles */
+.home-heroimage {
+    background-image: url(..//img/471338755.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89%;
     border: 3px solid var(--dark);
-    max-width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-tagline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-curbside {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center; 
+    border: 3px solid var(--dark);
+    border-radius: 3rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    margin: 1rem;
+    width: 80%;
+    color: var(--light);
+}
+
+.home-curbside-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.home-main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.row.home-display-wrapper {
+    align-items: stretch;
+}
+
+.row.home-display-wrapper >div {
+    margin-bottom: 3.5rem;
+}
+
+.home-display {
+    border: 3px solid var(--dark);
+    color: var(--light);
+    background-color: var(--primary);
+    margin: 1rem;
+    padding: .5rem;
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center; 
+    min-height: 15rem; 
+    height: 100%;
+}
+
+.home-display-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+
+.home-display-picture {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    width: 100%;
+    padding-top: 60%;
+    margin-bottom: 1rem;
+}
+
+.home-display-picture img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
+    border: 3px solid var(--light);
 }
 
-.page-title.error-title h1{
-    margin: 1rem 0;
-}
-
-.error-text {
-    margin: 3rem 0 2rem;
-}
-
-.error-links a {
+.how-sweet-text {
     font-weight: bold;
+    margin-top: 1rem;
 }
 
-.error-links ul {
-    list-style-type: none;
-}
-/* End of styles for the error pages */
-
-/* Beginning of Submission Form Styles */
-
-/* I gave the form a class of 'service-form' but can remove it if we decide to use the same styles for all forms */
-.service-form {
-  max-width: 800px;
-  margin: 2rem auto;
-  border: 2px solid var(--primary);
-  padding: 2rem;
-}
-
-/* Styles for the input fields and text areas */
-.form-control > input,
-.form-control > textarea { 
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid;
-  border-radius: 3px;
-  font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  color: inherit; 
+.home-display-button .btn {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 3px solid var(--dark);
+    border-radius: 0.5rem;
+    padding: 0.5em 0.75em;
+    font-size: 1rem; 
+    font-weight: bold;
+    text-decoration:none;
+    display: block;
+    overflow: hidden;
+    margin-top: 2rem;
 }
 
-.form-control > input:focus,
-.form-control > textarea:focus {
-
-
+.home-display-button .btn:hover {
+    background-color: var(--secondary-hover);
 }
-
-/* Make the 'required' fields have a red border */
-.form-control > input:required,
-.form-control > textarea:required {
-  border-color: red;
-  outline-color: red;
-}
-
-/* Remove red border from the 'required' fields when user starts typing */
-.form-control > input:valid, 
-.form-control > textarea:valid {
-  outline-color:inherit;
-  border-color: inherit;
-}
-
-/* Styles for the labels: add spacing and bolder text */
-.form-group > label {
-  display: block;
-  padding: 1rem 0 0;
-  font-weight: 600;
-}
-
-/* Styles for the 'submit' button */
-.form-group input[type=submit] { 
-  background-color: var(--primary);
-  border: 2px solid var(--dark);
-  color: var(--light);
-  margin: 1rem 0;
-  width: auto;
-}
-
-/* Styles for hovering over the 'submit' button */
-.form-group input[type=submit]:hover { 
-  background-color: #2B6E5B;
-  cursor: pointer;
-}
-
-/* In order to center-align the 'submit' button I added a class of 'submit' to the 'form-group' div in HTML. I selected that div here and made it a flexbox item so that I could then center it */
-.submit.form-group {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: center;
-}
-
-.error-message {
-  background-color: #FFF1F1;
-  border: 2px solid #E81A1A;
-  padding: 1rem;
-  color: #e81a1a;
-  font-weight: bold;
-}
-
-.page-text { /* For sign-up success page */
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: flex-start;
-}
-
-/* End of Submission Form Styles */
+/* End of Home Page Styles */
 
 /* About Us Styles */
 .aboutus-img {
@@ -943,8 +1110,7 @@ footer img {
 }
 
 .aboutus-img img {
-    border: 3px solid var(--dark);
-    
+    border: 3px solid var(--dark); 
 }
 
 .aboutus-content {
@@ -964,7 +1130,7 @@ footer img {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: flex-start;
 }
 
@@ -983,6 +1149,14 @@ footer img {
 /* End of About Us Styles */
 
 /* Contact Styles */
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-socialhours h2 {
+    padding-bottom: 0;
+}
+
 .contact-social-buttons {
     display: flex;
     flex-flow: row wrap;
@@ -991,4 +1165,326 @@ footer img {
     align-content: flex-start;
 }
 
+.contact-form-success {
+    margin-bottom: 1rem;
+}
+
+.contact-form-fail {
+    margin-bottom: 1rem;
+    border: 3px solid red;
+}
 /* End of Contact Style */
+
+/* Beginning of Submission Form Styles */
+
+/* Gave form a class of 'submission-form' */
+.submission-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    border: 2px solid var(--primary);
+    padding: 2rem;
+}
+
+.submission-form  h1,h2,h3,p {
+    padding-bottom: 1rem;
+}
+
+.submission-form a:visited {
+    color: inherit;
+}
+
+/* Styles for the input fields and text areas */
+.form-control > input,
+.form-control > textarea, 
+.form-control > select{ 
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit; 
+}
+
+/* Make the 'required' fields have a red border on the error pages */
+.form-control > input:required,
+.form-control > textarea:required {
+    border-color: red;
+    outline-color: red;
+    background-color: rgb(255, 193, 193);
+}
+
+/* Remove red border from the 'required' fields when user starts typing */
+.form-control > input:valid, 
+.form-control > textarea:valid {
+    outline-color:inherit;
+    border-color: inherit;
+}
+
+/* Styles for the labels */
+.form-group > label {
+    display: block;
+    padding: 1rem 0 0;
+    font-weight: 600;
+}
+
+/* Styles for the 'submit' button */
+.form-group input[type=submit] { 
+    background-color: var(--primary);
+    border: 2px solid var(--dark);
+    color: var(--light);
+    margin: 1rem 0;
+    width: auto;
+}
+
+/* Styles for hovering over the 'submit' button */
+.form-group input[type=submit]:hover { 
+    background-color: var(--primary-hover);
+    cursor: pointer;
+}
+
+/* Center-align the 'submit' button */
+.submit.form-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.error-message {
+    background-color: #FFF1F1;
+    border: 2px solid #e81a1a;
+    padding: 1rem;
+    color: #e81a1a;
+    font-weight: bold;
+}
+
+/* Center the buttons that lead to the success and error pages */
+.form-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start ;
+    align-content: flex-start ;
+    justify-content: center;
+}
+
+.btn.btn-service {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn.btn-service:hover {
+    background-color: var(--primary-hover);
+    cursor: pointer;
+}
+
+.btn.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    border: 3px solid var(--dark);
+}
+
+.btn.btn-secondary:hover {
+    background-color: var(--secondary-hover);
+    color: var(--dark);
+}  
+
+.btn-social {
+    color: var(--secondary);
+}
+
+.btn-social:hover {
+    color: var(--secondary-hover);
+}
+
+.btn-social:visited {
+    color: var(--secondary);
+    
+}
+
+.btn-social:visited:hover {
+    color: var(--secondary-hover);
+    
+}
+
+a:visited {
+    color: inherit;
+}
+
+.btn.btn-request {
+    padding: 0 1rem 0 0;
+}
+/* End of Submission Form styles */
+
+/* Beginning of styles for Services/Loyalty pages */
+.service {
+    padding-bottom: 1rem;
+}
+
+.service .service-description h3 {
+    padding: 1rem 0;
+}
+
+.service-text p {
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .service {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .service .service-description {
+        flex: 1 0 100%;
+        -webkit-flex: 1 0 100%;
+    }
+
+    .service .service-image {
+        flex: 0 0 70%;
+        -webkit-flex: 0 0 70%;
+        padding: 0px 20px 1rem 0px;
+    }
+}
+/* End of styles for Services/Loyalty pages */
+
+/* Contact Styles */
+.contact-socialhours {
+    background-color: var(--primary);
+    color: var(--light);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-start;
+    min-height: 15rem;
+    padding: 1rem; 
+}
+
+.contact-contacts {
+    background-color: var(--primary);
+    color: var(--light);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    min-height: 15rem;
+    padding: 1rem;
+}
+
+.contact-socialbuttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.contact-socialbutton {
+    margin: 0.05rem;
+}
+
+.contact-hours {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.contact-hours h3 {
+    align-self: flex-end;
+}
+
+@media screen and (max-width:768px) {
+    .contact-order-2 {
+        order: 2;
+    }
+
+    .contact-order-1 {
+        order: 1;
+    }
+
+    .contact-order-3 {
+        order: 3;
+    }
+
+    .contact-contacts, .contact-hours .contact-hours-hours .contact-socialhours .contact-socialbuttons .contact-socialbutton .contact {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.contact-form-success {
+    border: 3px solid var(--dark);
+}
+/* End of Contact Style */
+
+.service .service-image {
+    flex: 0 0 70%;
+    -webkit-flex: 0 0 70%;
+    padding: 0px 20px 1rem 0px;
+}
+/* End of styles for Services/Loyalty pages */
+
+/* Beginning of styles for the error pages */
+.error-img {
+    max-width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+}
+ 
+.error-img img {
+    border: 3px solid var(--dark);
+    max-width: 40%;
+    object-fit: cover;
+    object-position: center;
+}
+ 
+.page-title.error-title h1 {
+    margin: 1rem 0;
+}
+ 
+.error-text {
+    margin: 3rem 0 2rem;
+}
+
+.error-links a {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.error-links a:hover {
+    color: var(--primary-hover);
+}
+
+.error-links ul {
+    list-style-type: none;
+}
+/* End of styles for the error pages */ 

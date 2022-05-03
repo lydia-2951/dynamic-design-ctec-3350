@@ -3,38 +3,45 @@
     <head>
         <meta charset="utf-8">
         <meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name= "keywords" content= "MG Rewards, sign up, program, discounts, coupons, offers">
-        <meta name= "description" content= "This is the websites' loyalty program page that allows users to sign up to become MG Rewards members">
+        <meta name="keywords" content="website redesign, Dynamic Design, Mansfield Gardens">
+        <meta name="description" content="This is Mansfield Gardens' loyalty program sign-up page">
         <meta name= "author" content= "Dynamic Design">
 
         <title>MG Rewards Sign-Up | Dynamic Design</title>
 
         <link rel= "stylesheet" href="css/style.css">
-
-        <!--The @import font link goes here-->
-
     </head>
 
     <body>
+
         <header>
-            <!-- Header information here -->
+            <nav>
+                <a href="index.html" class="navbar-brand">Mansfield Gardens></a>
+                <button class="navbar-toggler" type="button" data-target="#main-navigation"><i class="fa-solid fa-bars"></i></button>
+                <ul id="main-navigation" class="navbar">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="plants.html" title="Plants">Plants</a></li>
+                    <li><a href="products.html" title="Products">Products</a></li>
+                    <li><a href="service.html" title="Services">Services</a></li>
+                    <li><a href="loyalty-program.html" title="Loyalty Program">Loyalty Program</a></li>
+                    <li><a href="aboutus.html" title="About Us">About Us</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav> 
         </header>
 
-        <nav>
-            <!--Navigation here-->
-        </nav>
-
         <main>
-
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <form method="post" action="registration.php" name="registration" class="service-form">
+                        <form method="post" action="registration.php" name="registration" class="submission-form">
 
-                            <div class="page-text">
+                            <div class="form-title">
                                 <h1>MG Rewards Loyalty Program</h1>
                                 <h2>Enjoy fresh deals and lively perks!</h2>
-                                <p>It's free to join, and takes almost no time at all.<br> Receive goodies on your birthday, exclusive offers, weekly newsletters, coupons and more.<br> Please fill out your information below to join.</p>
+                                <p>It's free to join, and takes almost no time at all.</p>
+                                <p>Receive goodies on your birthday, exclusive offers, weekly newsletters, coupons and more.</p>
+                                <p>Please fill out your information below to join.</p>
                             </div>
                             
                             <div class="form-group">
@@ -70,7 +77,12 @@
                                     <input type="submit" name="submit" id="submit" value="Submit" />
                                 </div>
                             </div>
-
+                            <div class="col-sm-12">
+                                <div class="form-buttons">
+                                    <a href="loyalty-program-error.html" title="Error page button" class="btn btn-request">Form Error Page</a>
+                                    <a href="loyalty-program-success.html" title="Error page button" class="btn btn-request">Form Success Page</a>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -78,6 +90,57 @@
         </main>
 
         <footer>
-            <!--Footer here-->
+            <div class="container-fluid">  
+                <div class= "footer-container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">    
+                            <div class ="footer-socialbuttons">
+                                <div class="footer-socialbutton">
+                                    <a class="btn btn-social btn-sml" href="https://www.facebook.com/MansfieldGardens/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                                </div>
+                                    <div class="footer-socialbutton">
+                                        <a class="btn btn-social btn-sml"><i class="fa-brands fa-instagram-square" href="#" target="_blank"></i></a>
+                                    </div>
+                                <div class="footer-socialbutton">
+                                    <a class="btn btn-social btn-sml"><i class="fa-brands fa-twitter-square" href="#" target="_blank"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="footer-text">
+                                <p>
+                                    (817) 522-2019 <br>
+                                    815 N Main St, Mansfield, TX 76063 <br>
+                                    mansfieldgardenstx@gmail.com <br>
+                                    MON-FRI: 8 AM - 6:30 PM <br>
+                                    SAT: 9 AM - 5 PM <br>
+                                    SUN: 10 AM - 4 PM <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="footer-directions">
+                                <a href="https://www.google.com/maps/dir//manfield+gardens/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x864e610faf4333fb:0x1ff23050785fcafb?sa=X&ved=2ahUKEwiI9P36i9_2AhW6j2oFHQKaAwEQ9Rd6BAguEAU">Directions</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="footer-error-links">
+                                <a href="404-error.html" title="404 Error Page">View the 404 Error Page</a>
+                                <a href="500-error.html" title="500 Error Page">View the 500 Error Page</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="footer-text">
+                               <p>Dynamic Design | CTEC3350 | For Academic Use Only
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/app.js"></script>
     </body>
+</html>
