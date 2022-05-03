@@ -1152,6 +1152,15 @@ nav {
     justify-content: flex-start;
     align-content: flex-start;
 }
+
+.contact-form-success {
+    margin-bottom: 1rem;
+}
+
+.contact-form-fail {
+    margin-bottom: 1rem;
+    border: 3px solid red;
+}
 /* End of Contact Style */
 
 /* Beginning of Submission Form Styles */
@@ -1193,6 +1202,7 @@ nav {
 .form-control > textarea:required {
   border-color: red;
   outline-color: red;
+  background-color: rgb(255, 193, 193);
 }
 
 /* Remove red border from the 'required' fields when user starts typing */
