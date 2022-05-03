@@ -835,6 +835,14 @@ footer img {
     color: var(--dark);
 }
 
+.footer-info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .footer-error-links {
     display: flex;
     flex-flow: row wrap;
