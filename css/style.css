@@ -194,6 +194,8 @@ td {
 [class^='col-'] {
     padding-left: 1rem;
     padding-right: 1rem;
+    flex: 100%;
+    width: 100%;
 }
 
 .col-1 {
@@ -1403,13 +1405,17 @@ a:visited {
     align-items: flex-start;
     justify-content: flex-start;
     align-content: flex-start;
+    font-size: 1rem;
 }
 
 .contact-socialbutton {
     margin: 0.05rem;
+    font-size: 1.5rem;
 }
 
-
+#mansfieldemail {
+ /* font-size: .6rem; */
+}
 
 @media screen and (max-width:982px) {
     .contact-order-2 {
