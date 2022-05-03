@@ -1437,22 +1437,27 @@ a:visited {
  }
  
  .error-img img {
-     border: 3px solid var(--dark);
-     max-width: 40%;
-     object-fit: cover;
-     object-position: center;
+    border: 3px solid var(--dark);
+    max-width: 40%;
+    object-fit: cover;
+    object-position: center;
  }
  
  .page-title.error-title h1{
-     margin: 1rem 0;
+    margin: 1rem 0;
  }
  
  .error-text {
-     margin: 3rem 0 2rem;
+    margin: 3rem 0 2rem;
  }
  
  .error-links a {
-     font-weight: bold;
+    font-weight: bold;
+    color: var(--primary);
+ }
+
+ .error-links a:hover {
+     color: var(--primary-hover);
  }
  
  .error-links ul {
