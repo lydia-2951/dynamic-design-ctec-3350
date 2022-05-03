@@ -1413,10 +1413,6 @@ a:visited {
     font-size: 1.5rem;
 }
 
-#mansfieldemail {
- /* font-size: .6rem; */
-}
-
 @media screen and (max-width:982px) {
     .contact-order-2 {
         order: 2;
