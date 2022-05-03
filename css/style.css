@@ -800,10 +800,11 @@ footer img {
 .footer-text {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     align-content: center;
 }
+
 
 .footer-directions a {
     display: flex;
@@ -844,6 +845,7 @@ footer img {
 
 .footer-error-links a {
     padding-right: 2rem;
+    color: var(--secondary);
 }
 
 .footer-error-links a:hover {
@@ -1154,7 +1156,16 @@ nav {
     justify-content: flex-start;
     align-content: flex-start;
 }
-/* End of Contact Styles */
+
+.contact-form-success {
+    margin-bottom: 1rem;
+}
+
+.contact-form-fail {
+    margin-bottom: 1rem;
+    border: 3px solid red;
+}
+/* End of Contact Style */
 
 /* Beginning of Submission Form Styles */
 
@@ -1195,6 +1206,7 @@ nav {
 .form-control > textarea:required {
     border-color: red;
     outline-color: red;
+    background-color: rgb(255, 193, 193);
 }
 
 /* Remove red border from the 'required' fields when user starts typing */

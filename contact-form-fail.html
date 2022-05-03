@@ -45,7 +45,7 @@
                     <div class="col-lg-4 col-sm-12 contact-order-1">
                         <div class="service-form contact-form">
                             <h1>Quick Contact Form</h1>
-                            <img class="contact-form-success" src="img/contactsuccess.png" alt="Your responce has been recorded you should recieve and email conformation"> 
+                            <img class="contact-form-fail" src="img/contactfail.png" alt="One or more fields have an error. Please check and try agains"> 
                             <form method="post" action="quickcontact.php" name="Quick Contact">
                                 
                                     <fieldset>
@@ -65,7 +65,7 @@
                                             <label for="email">Email<label>
                                          </div>
                                          <div class="form-control">
-                                             <input method="post" action="email" id="email" placeholder="user@email.com"  autocomplete="off">
+                                             <input required method="post" action="email" id="email" placeholder="user@email.com"  autocomplete="off">
                                         </div>
                                         <div class="form-group">
                                             <label for="services">Service:</label>
@@ -157,6 +157,12 @@
                                 <div class="footer-error-links">
                                     <a href="404-error.html" title="404 Error Page">View the 404 Error Page</a>
                                     <a href="500-error.html" title="500 Error Page">View the 500 Error Page</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="footer-text">
+                                   <p>Dynamic Design | CTEC3350 | For Academic Use Only
+                                </p>
                                 </div>
                             </div>
                         </div>
