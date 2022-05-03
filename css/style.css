@@ -692,17 +692,17 @@ td {
 }
 
 .service-banner-content a:hover {
-        background-color: var(--secondary-hover);
-      }
+    background-color: var(--secondary-hover);
+}
 /* End of styles for Service Banner component */
 
 /* Beginning of styles for Product Card component */
 .product-container {
-    display:flex;
-    flex-flow:row wrap;
-    align-items:flex-start;
-    align-content:flex-start;
-    justify-content:flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
     margin-bottom: 1.5rem;
 }
 
@@ -720,6 +720,7 @@ td {
 
 .product-img {
     flex: 0 0 90%;
+    -webkit-flex: 0 0 90%;
     max-width: 90%;
     width: 100%;
 }
@@ -729,13 +730,13 @@ td {
     width: 100%;
 }
 
-@media screen and  (max-width: 992px){
+@media screen and (max-width: 992px){
     .product-container {
-       display:flex;
-       flex-flow:row wrap;
-       align-items:flex-start;
-       align-content:flex-start;
-       justify-content:space-around;
+       display: flex;
+       flex-flow: row wrap;
+       align-items: flex-start;
+       align-content: flex-start;
+       justify-content: space-around;
     }
 
     .product-container {
@@ -744,11 +745,13 @@ td {
 
     .product-container > img {
         flex: 0 0 40%;
+        -webkit-flex: 0 0 40%;
         max-width: 40%;
     }
     
     .product-img {
         flex: 0 0 40%;
+        -webkit-flex: 0 0 40%;
         max-width: 40%;
         width: 100%;
         padding-right: 5%;
@@ -756,6 +759,7 @@ td {
 
     .product-description {
         flex: 0 0 calc(60% - 1rem);
+        -webkit-flex: 0 0 calc(60% - 1rem);
         max-width: calc(60% - 1rem);
     }
 } 
@@ -778,7 +782,7 @@ td {
 
 footer img {
     max-width: 3rem;
-    padding: .15rem;
+    padding: 0.15rem;
 } 
 
 .footer-socialbuttons {
@@ -849,7 +853,7 @@ footer img {
 
 /* Header Styles */
 nav {
-    display: flexbox;
+    display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     align-content:  flex-start;
@@ -863,6 +867,7 @@ nav {
     background: url('../img/mansfieldgardenslogo.png') no-repeat 0 0/contain  transparent;
     text-indent: -999999999px;
     flex: 0 0 calc(100% - 3rem);
+    -webkit-flex: 0 0 calc(100% - 3rem);
     max-width: calc(100%);
 }
 
@@ -885,6 +890,7 @@ nav {
 
 .navbar {
     flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
     max-width: 100%;
     display: none;
 }
@@ -916,6 +922,10 @@ nav {
 @media screen and (min-width:992px) {
     .navbar {
         display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
     }
 
     .navbar li {
@@ -974,14 +984,6 @@ nav {
     justify-content: center;
     align-content: center;
 }
-
-/* .home-curbside-space {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-} */
 
 .home-curbside {
     display: flex;
@@ -1152,118 +1154,118 @@ nav {
     justify-content: flex-start;
     align-content: flex-start;
 }
-/* End of Contact Style */
+/* End of Contact Styles */
 
 /* Beginning of Submission Form Styles */
 
 /* Gave form a class of 'submission-form' */
 .submission-form {
-  max-width: 800px;
-  margin: 2rem auto;
-  border: 2px solid var(--primary);
-  padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    border: 2px solid var(--primary);
+    padding: 2rem;
 }
 
 .submission-form  h1,h2,h3,p {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .submission-form a:visited {
-  color: inherit;
+    color: inherit;
 }
 
 /* Styles for the input fields and text areas */
 .form-control > input,
 .form-control > textarea, 
 .form-control > select{ 
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid;
-  border-radius: 3px;
-  font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  color: inherit; 
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: 'Raleway', 'Geneva', 'Tahoma', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit; 
 }
 
 /* Make the 'required' fields have a red border on the error pages */
 .form-control > input:required,
 .form-control > textarea:required {
-  border-color: red;
-  outline-color: red;
+    border-color: red;
+    outline-color: red;
 }
 
 /* Remove red border from the 'required' fields when user starts typing */
 .form-control > input:valid, 
 .form-control > textarea:valid {
-  outline-color:inherit;
-  border-color: inherit;
+    outline-color:inherit;
+    border-color: inherit;
 }
 
 /* Styles for the labels */
 .form-group > label {
-  display: block;
-  padding: 1rem 0 0;
-  font-weight: 600;
+    display: block;
+    padding: 1rem 0 0;
+    font-weight: 600;
 }
 
 /* Styles for the 'submit' button */
 .form-group input[type=submit] { 
-  background-color: var(--primary);
-  border: 2px solid var(--dark);
-  color: var(--light);
-  margin: 1rem 0;
-  width: auto;
+    background-color: var(--primary);
+    border: 2px solid var(--dark);
+    color: var(--light);
+    margin: 1rem 0;
+    width: auto;
 }
 
 /* Styles for hovering over the 'submit' button */
 .form-group input[type=submit]:hover { 
-  background-color: var(--primary-hover);
-  cursor: pointer;
+    background-color: var(--primary-hover);
+    cursor: pointer;
 }
 
 /* Center-align the 'submit' button */
 .submit.form-group {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
 }
 
 .error-message {
-  background-color: #FFF1F1;
-  border: 2px solid #e81a1a;
-  padding: 1rem;
-  color: #e81a1a;
-  font-weight: bold;
+    background-color: #FFF1F1;
+    border: 2px solid #e81a1a;
+    padding: 1rem;
+    color: #e81a1a;
+    font-weight: bold;
 }
 
 /* Center the buttons that lead to the success and error pages */
 .form-buttons {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start ;
-  align-content: flex-start ;
-  justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start ;
+    align-content: flex-start ;
+    justify-content: center;
 }
 
 .btn.btn-service {
-  display: inline-block;
-  background-color: var(--primary);
-  color: var(--light);
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 1rem;
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .btn.btn-service:hover {
-  background-color: var(--primary-hover);
-  cursor: pointer;
+    background-color: var(--primary-hover);
+    cursor: pointer;
 }
 
 .btn.btn-secondary {
@@ -1277,8 +1279,8 @@ nav {
 }
 
 .btn.btn-secondary:hover {
-background-color: var(--secondary-hover);
-color: var(--dark);
+    background-color: var(--secondary-hover);
+    color: var(--dark);
 }  
 
 .btn-social {
@@ -1322,23 +1324,24 @@ a:visited {
 }
 
 @media screen and (min-width: 992px) {
-  
- .service {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-}
+    .service {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
 
-.service .service-description {
-    flex: 1 0 100%;
-}
+    .service .service-description {
+        flex: 1 0 100%;
+        -webkit-flex: 1 0 100%;
+    }
 
-.service .service-image {
-    flex: 0 0 70%;
-    padding: 0px 20px 1rem 0px;
-}
+    .service .service-image {
+        flex: 0 0 70%;
+        -webkit-flex: 0 0 70%;
+        padding: 0px 20px 1rem 0px;
+    }
 }
 /* End of styles for Services/Loyalty pages */
 
@@ -1393,7 +1396,7 @@ a:visited {
 
 @media screen and (max-width:768px) {
     .contact-order-2 {
-        order: 2 ;
+        order: 2;
     }
 
     .contact-order-1 {
@@ -1420,6 +1423,7 @@ a:visited {
 
 .service .service-image {
     flex: 0 0 70%;
+    -webkit-flex: 0 0 70%;
     padding: 0px 20px 1rem 0px;
 }
 /* End of styles for Services/Loyalty pages */
@@ -1434,33 +1438,33 @@ a:visited {
     align-items: flex-start;
     flex: 0 0 100%;
     -webkit-flex: 0 0 100%;
- }
+}
  
- .error-img img {
+.error-img img {
     border: 3px solid var(--dark);
     max-width: 40%;
     object-fit: cover;
     object-position: center;
- }
+}
  
- .page-title.error-title h1{
+.page-title.error-title h1 {
     margin: 1rem 0;
- }
+}
  
- .error-text {
+.error-text {
     margin: 3rem 0 2rem;
- }
- 
- .error-links a {
+}
+
+.error-links a {
     font-weight: bold;
     color: var(--primary);
- }
+}
 
- .error-links a:hover {
-     color: var(--primary-hover);
- }
- 
- .error-links ul {
-     list-style-type: none;
- }
- /* End of styles for the error pages */ 
+.error-links a:hover {
+    color: var(--primary-hover);
+}
+
+.error-links ul {
+    list-style-type: none;
+}
+/* End of styles for the error pages */ 
